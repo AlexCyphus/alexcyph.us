@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400&display=swap');
+
+/*Just use viewheights lmao*/
+
+.app {
+  font-family: 'IBM Plex Mono', monospace;
+  color: black;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0 20vw;
+  max-width: 75%;
+  font-size: 1.65vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outer-header {
+  height: 22vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.inner-header {
+
+}
+
+.alexcyphus {
+  font-size: 6vw;
+  padding: 10px;
+  margin: 0;
+}
+
+.brd {
+  border-bottom: 1px dashed black;
+}
+
+.headings {
+  font-size: 1.7vw;
+}
+
+.outer-content {
+  height: 55vh;
+}
+
+.inner-content {
+  margin: auto;
+}
+
+.outer-actions {
+  height: 12vh;
+}
+
+.outer-footer {
+  height: 10vh;
+  font-size: 15px;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  /* Make margins not dramatic */
+  .app {
+    margin: 3% 5% 1% 5%;
+    font-size: 15px;
+  }
+
+  .alexcyphus {
+    font-size: 5vw;
+  }
+
+  .outer-content {
+    height: 67vh;
+  }
+
+  .outer-header {
+    height: 10vh;
+  }
+
+  .headings {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Colors */
+.blue {color: #49B6FF}
+.yellow {color: #F3CA40}
+.red {color: #FF7272}
+.purple {color: #C49CA7}
+.green {color: #80BE8C}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sm-font {
+  font-size: 3vw;
 }
