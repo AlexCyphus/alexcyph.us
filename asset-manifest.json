@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/alexcyphus.github.io/static/css/main.63cb3f6a.chunk.css",
-    "main.js": "/alexcyphus.github.io/static/js/main.4c61f65f.chunk.js",
-    "main.js.map": "/alexcyphus.github.io/static/js/main.4c61f65f.chunk.js.map",
-    "runtime-main.js": "/alexcyphus.github.io/static/js/runtime-main.acd272c8.js",
-    "runtime-main.js.map": "/alexcyphus.github.io/static/js/runtime-main.acd272c8.js.map",
-    "static/css/2.11829350.chunk.css": "/alexcyphus.github.io/static/css/2.11829350.chunk.css",
-    "static/js/2.e9895507.chunk.js": "/alexcyphus.github.io/static/js/2.e9895507.chunk.js",
-    "static/js/2.e9895507.chunk.js.map": "/alexcyphus.github.io/static/js/2.e9895507.chunk.js.map",
-    "index.html": "/alexcyphus.github.io/index.html",
-    "precache-manifest.c0e6259dae0d26ce126a1b76f28997b3.js": "/alexcyphus.github.io/precache-manifest.c0e6259dae0d26ce126a1b76f28997b3.js",
-    "service-worker.js": "/alexcyphus.github.io/service-worker.js",
-    "static/css/2.11829350.chunk.css.map": "/alexcyphus.github.io/static/css/2.11829350.chunk.css.map",
-    "static/css/main.63cb3f6a.chunk.css.map": "/alexcyphus.github.io/static/css/main.63cb3f6a.chunk.css.map",
-    "static/js/2.e9895507.chunk.js.LICENSE.txt": "/alexcyphus.github.io/static/js/2.e9895507.chunk.js.LICENSE.txt"
+    "main.css": "/alexcyphus/static/css/main.63cb3f6a.chunk.css",
+    "main.js": "/alexcyphus/static/js/main.816fc708.chunk.js",
+    "main.js.map": "/alexcyphus/static/js/main.816fc708.chunk.js.map",
+    "runtime-main.js": "/alexcyphus/static/js/runtime-main.cce92efd.js",
+    "runtime-main.js.map": "/alexcyphus/static/js/runtime-main.cce92efd.js.map",
+    "static/css/2.11829350.chunk.css": "/alexcyphus/static/css/2.11829350.chunk.css",
+    "static/js/2.e9895507.chunk.js": "/alexcyphus/static/js/2.e9895507.chunk.js",
+    "static/js/2.e9895507.chunk.js.map": "/alexcyphus/static/js/2.e9895507.chunk.js.map",
+    "index.html": "/alexcyphus/index.html",
+    "precache-manifest.08778c2bab3693f5e49af5ae89eaa30b.js": "/alexcyphus/precache-manifest.08778c2bab3693f5e49af5ae89eaa30b.js",
+    "service-worker.js": "/alexcyphus/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/alexcyphus/static/css/2.11829350.chunk.css.map",
+    "static/css/main.63cb3f6a.chunk.css.map": "/alexcyphus/static/css/main.63cb3f6a.chunk.css.map",
+    "static/js/2.e9895507.chunk.js.LICENSE.txt": "/alexcyphus/static/js/2.e9895507.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.acd272c8.js",
+    "static/js/runtime-main.cce92efd.js",
     "static/css/2.11829350.chunk.css",
     "static/js/2.e9895507.chunk.js",
     "static/css/main.63cb3f6a.chunk.css",
-    "static/js/main.4c61f65f.chunk.js"
+    "static/js/main.816fc708.chunk.js"
   ]
 }
