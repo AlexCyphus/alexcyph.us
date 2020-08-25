@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Overlay({emoji, title, description}) {
+function ProjectBox({emoji, title, description}) {
   return ([
     <div className="col-md-6 outer-project-box">
       <div className="inner-project-box">
@@ -18,4 +18,4 @@ function Overlay({emoji, title, description}) {
 ])
 }
 
-export default Overlay
+export default ProjectBox
