@@ -10,7 +10,7 @@ function Overlay({display, toggleOverlay}) {
       <div className="x clickable" onClick={toggleOverlay}><p className="m-0">x</p></div>
       <div className="inner-project-box-container container my-auto">
         <div className="row">
-          <ProjectBox emoji="📈" title="User Personas" description="Using Python + machine learning to extract knowledge from 650,000 data points"/>
+          <ProjectBox emoji="📈" title="User Personas" description="Using Python + machine learning to extract knowledge from 650,000 data points" />
           <ProjectBox emoji="🅴" title="eProjects" description="Leading a team of 15 for UBC’s largest entrepreneurship club’s best year"/>
         </div>
         <div className="row">

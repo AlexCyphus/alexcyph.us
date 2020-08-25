@@ -4,6 +4,8 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Actions from './components/Actions.js';
 import Overlay from './components/Overlay.js';
+import { BrowserRouter as Router } from "react-router-dom"
+import Home from "./pages/Home"
 
 
 class App extends Component {
@@ -22,6 +24,7 @@ class App extends Component {
   render() {
     return (
     <div className="app text-center">
+    <Router exact path="/home" component={Home}/>
     <Overlay display={this.state.overlay ? 'flex' : 'none'} toggleOverlay={this.toggleOverlay}/>
     <div style={{display: this.state.overlay ? "none" : "block"}}>
       <div className="outer-header d-flex brd">
