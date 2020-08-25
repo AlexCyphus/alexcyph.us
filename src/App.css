@@ -5,7 +5,7 @@
 .app {
   font-family: 'IBM Plex Mono', monospace;
   color: black;
-  overflow: hidden;
+
   height: 100vh;
   margin: 0 20vw;
   max-width: 75%;
@@ -85,4 +85,79 @@
 
 .sm-font {
   font-size: 3vw;
+}
+
+/* Overlay */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.outer-project-box {
+  height: 37vh;
+  display: flex;
+  padding: 25px;
+}
+
+.inner-project-box {
+  width: 100%;
+  border: 1px black solid;
+  border-radius: 15px;
+  padding: 15px 50px 15px 50px;
+  -webkit-box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
+  -moz-box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
+  box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
+}
+
+.inner-project-box:hover {
+		background-color: #242424;
+    color: #fff;
+		cursor: pointer;
+}
+
+.inner-project-box-container {
+
+}
+
+.project-box-content {
+  text-align: left;
+  height: 70%;
+  font-size: 1.3vw;
+  display: flex;
+}
+
+.project-box-header {
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+
+.emoji {
+  display: inline;
+  text-align: left;
+  width: 20%;
+  font-size: 3vw;
+  margin: auto 0;
+}
+
+.project-title {
+  display: inline;
+  text-align: right;
+  width: 80%;
+  margin: auto 0;
+  font-size: 2vw;
+}
+
+.x {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  margin: 20px 100px;
+  font-size: 75px;
+  font-weight: bold;
 }
