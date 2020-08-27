@@ -5,12 +5,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter} from "react-router-dom"
-//import Routes from "./Routes"
+import Routes from "./Routes"
 
 
 ReactDOM.render(
   <BrowserRouter>
-    <App/>
+    <Routes/>
   </BrowserRouter>,
   document.getElementById('root'));
 
