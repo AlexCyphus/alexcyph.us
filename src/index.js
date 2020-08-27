@@ -9,7 +9,7 @@ import Routes from "./Routes"
 
 ReactDOM.render(
   <BrowserRouter>
-    <Routes/>
+    <App/>
   </BrowserRouter>,
   document.getElementById('root'));
 
