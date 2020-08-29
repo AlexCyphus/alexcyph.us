@@ -1,13 +1,13 @@
 import React from 'react';
 import App from "./App";
-import Home from "./pages/Home";
 import {Route} from "react-router-dom"
+import ProjectArticle from './components/ProjectArticle.js';
 
 function Routes() {
   return (
     <div>
       <Route exact path="/" component={App}/>
-      <Route exact path="/home" component={Home}/>
+      <Route exact path ="/project/:projectID" component={ProjectArticle}/>
     </div>
   )
 }

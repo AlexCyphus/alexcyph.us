@@ -13,7 +13,7 @@ class App extends Component {
     super(props)
     this.toggleOverlay = this.toggleOverlay.bind(this);
     this.state = {
-      overlay: true,
+      overlay: false,
     }
   }
   toggleOverlay() {
@@ -27,7 +27,7 @@ class App extends Component {
     <Overlay display={this.state.overlay ? 'flex' : 'none'} toggleOverlay={this.toggleOverlay}/>
     <div style={{display: this.state.overlay ? "none" : "block"}}>
       <div className="outer-header d-flex brd">
-        <Header/>
+        <Header display="true"/>
       </div>
       <div className="outer-content d-flex brd">
         <div className="inner-content text-left">

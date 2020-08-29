@@ -18,3 +18,9 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+// git pull
+// git add .
+// git commit -m "react-create-app on Heroku"
+// git push heroku master
+// heroku open

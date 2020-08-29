@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400&display=swap');
 
-/*Just use viewheights lmao*/
-
 .app {
   font-family: 'IBM Plex Mono', monospace;
   color: black;
-
   height: 100vh;
   margin: 0 20vw;
   max-width: 75%;
@@ -21,9 +18,7 @@
 }
 
 .alexcyphus {
-  font-size: 6vw;
-  padding: 10px;
-  margin: 0;
+  font-size: 5.7vw;
 }
 
 .brd {
@@ -55,7 +50,8 @@
 @media (max-width: 760px) {
   /* Make margins not dramatic */
   .app {
-    margin: 3% 5% 1% 5%;
+    margin: auto;
+    width: 80%;
     font-size: 15px;
   }
 
@@ -99,7 +95,7 @@
 }
 
 .outer-project-box {
-  height: 37vh;
+  height: 40vh;
   display: flex;
   padding: 25px;
 }
@@ -127,9 +123,15 @@
 .project-box-content {
   text-align: left;
   height: 70%;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   display: flex;
 }
+
+.project-box-content p {
+  margin: 0;
+  padding: 5px 0;
+}
+
 
 .project-box-header {
   width: 100%;
@@ -150,7 +152,7 @@
   text-align: right;
   width: 80%;
   margin: auto 0;
-  font-size: 2vw;
+  font-size: min(1.7vw, 3vh);
 }
 
 .x {
@@ -160,4 +162,64 @@
   margin: 20px 100px;
   font-size: 75px;
   font-weight: bold;
+}
+
+.outer-image {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.inner-image {
+  margin: 10px auto;
+  width: auto;
+  max-height: 50vh;
+  max-width: 100%
+}
+
+.article-content {
+  padding: 20px 0px;
+}
+
+.article-content p {
+
+}
+
+.article-header {
+  font-size: max(3vw, 3vh);
+  padding: 8px;
+  margin: 0
+}
+
+.article-description {
+  font-size: max(1.7vw, 1.7vh);
+  padding: 8px;
+  margin: 0
+}
+
+.article-link {
+  background: #E0E0E0;
+  padding: 3px;
+  cursor: pointer;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.article-link:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.drop-shadow {
+  -webkit-box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
+  -moz-box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
+  box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
+}
+
+.description {
+  font-size: 1.5vw;
 }
