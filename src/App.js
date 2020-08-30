@@ -39,8 +39,8 @@ class App extends Component {
       <div className="outer-content d-flex brd">
         <div className="inner-content text-left">
           <div>
-            <p> >> hey there 👋 i’m alex  </p>
-            <p> >> i’m a 🇬🇧 british / 🇨🇦 canadian currently living in berlin working @ tandem as a product manager </p>
+            <p>>> hey there 👋 i’m alex </p>
+            <p>>> i’m a 🇬🇧 british / 🇨🇦 canadian currently living in berlin working @ tandem as a product manager </p>
             <p>>> i previously worked at a 500 startups startup in colombia as a software engineer and interned in spain and canada</p>
             <p>>> i speak english 🇨🇦 + spanish 🇨🇴, am learning german 🇩🇪, and want to learn portuguese 🇧🇷 next </p>
             <p className="m-0">>> always interested to meet interesting new people and discuss interesting new things</p>
