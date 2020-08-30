@@ -12,15 +12,22 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.toggleOverlay = this.toggleOverlay.bind(this);
-    this.state = {
-      overlay: false,
+    const showOverlay = this.props.match.path;
+    if (showOverlay == "/o") {
+      this.state = {overlay: true,}
     }
+    else {
+      this.state = {overlay: false,}
+    }
+
   }
   toggleOverlay() {
     this.setState({overlay: !this.state.overlay});
     console.log(this.state.overlay)
   }
+
   render() {
+
     return (
     <div className="app text-center">
     <Router exact path="/home" component={Home}/>

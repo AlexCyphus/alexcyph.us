@@ -11,10 +11,7 @@
 
 .outer-header {
   height: 22vh;
-}
-
-.inner-header {
-
+  margin: auto;
 }
 
 .alexcyphus {
@@ -116,10 +113,6 @@
 		cursor: pointer;
 }
 
-.inner-project-box-container {
-
-}
-
 .project-box-content {
   text-align: left;
   height: 70%;
@@ -131,7 +124,6 @@
   margin: 0;
   padding: 5px 0;
 }
-
 
 .project-box-header {
   width: 100%;
@@ -175,15 +167,12 @@
   margin: 10px auto;
   width: auto;
   max-height: 50vh;
-  max-width: 100%
+  max-width: 100%;
 }
 
 .article-content {
   padding: 20px 0px;
-}
-
-.article-content p {
-
+  font-size: 1.8vh;
 }
 
 .article-header {
@@ -220,6 +209,27 @@
   box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
 }
 
-.description {
-  font-size: 1.5vw;
+.image-description {
+  font-size: 1.8vh;
+}
+
+.inner-article-navigation {
+  width: 100%;
+  font-size: 2.2vh;
+}
+
+.outer-article-navigation {
+  padding: 20px;
+}
+
+.tn {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.tn:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
