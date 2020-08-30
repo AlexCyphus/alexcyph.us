@@ -34,6 +34,11 @@ function ProjectArticle({match, description, location}) {
       desc = 'Graduating from Canadian business school and starting as a Spanish speaking software engineer'
       emoji = "🇨🇴"
       break;
+    case 5:
+      title = 'alexcyph.us'
+      desc = "Designing and developing my second personal website in Figma → Reactstrap"
+      emoji = "👨‍💻"
+      break;
   }
 
   console.log(title)
@@ -41,8 +46,8 @@ function ProjectArticle({match, description, location}) {
   var next = parseInt(projectID) + 1
   var last = parseInt(projectID) - 1
 
-  if (next == 5){next = 1}
-  if (last == 0){last = 4}
+  if (next == 6){next = 1}
+  if (last == 0){last = 5}
 
   return ([
     <div className="app">

@@ -17,7 +17,7 @@ function Header({display, link}) {
           <span className="sm-font">.</span>
           <span className="yellow">us</span>
         </h1>
-        <p className="headings" className={display == "true" ? "d-block" : "d-none"}>
+        <p className="headings">
           <span className="red">product manager</span>
           <span> / / </span>
           <span className="blue">language nerd</span>

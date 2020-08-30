@@ -1,12 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400&display=swap');
 
+/* Mobile */
+@media (max-width: 760px) {
+  /* Make margins not dramatic */
+  .app {
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+
+  .alexcyphus {
+    font-size: 10vw !important;
+    margin: 0 !important;
+  }
+
+  .outer-header {
+    height: 13vh !important;
+  }
+
+  .outer-content {
+    height: 65vh !important;
+  }
+
+  .inner-content {
+    font-size: min(4vw, 2.5vh) !important;
+  }
+
+  .headings {
+    display: none !important;
+  }
+
+  .inner-actions {
+    font-size: 2vw !important;
+  }
+
+  .project-box-content {
+    font-size: max(3vw, 1.7vh) !important;
+  }
+
+  .project-title {
+    font-size: max(3vw, 3vh) !important;
+  }
+
+  .emoji {
+    font-size: max(5vw, 5vh) !important;
+  }
+
+  .overlay {
+    margin: auto;
+    max-width: 85%;
+  }
+
+  .x {
+    font-size: 15vw !important;
+    margin: -10px 10px 10px 10px !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .inner-actions {
+    font-size: min(5vw, 2.5vh) !important;
+  }
+  .outer-footer {
+    height: 5vh !important;
+  }
+  .outer-actions {
+    height: 17vh !important;
+  }
+  .action {
+    padding: 5px;
+  }
+  .overlay {
+    margin: auto;
+    max-width: 100%;
+  }
+  .inner-project-box {
+    padding: 15px 20px 15px 20px !important;
+  }
+}
+
+
 .app {
   font-family: 'IBM Plex Mono', monospace;
   color: black;
   height: 100vh;
   margin: 0 20vw;
   max-width: 75%;
-  font-size: 1.65vw;
+  font-size: max(1.5vw, 2.5vh);
 }
 
 .outer-header {
@@ -40,33 +119,7 @@
 
 .outer-footer {
   height: 10vh;
-  font-size: 15px;
-}
-
-/* Mobile */
-@media (max-width: 760px) {
-  /* Make margins not dramatic */
-  .app {
-    margin: auto;
-    width: 80%;
-    font-size: 15px;
-  }
-
-  .alexcyphus {
-    font-size: 5vw;
-  }
-
-  .outer-content {
-    height: 67vh;
-  }
-
-  .outer-header {
-    height: 10vh;
-  }
-
-  .headings {
-    display: none;
-  }
+  font-size: max(1vw, 1.4vh);
 }
 
 /* Colors */
@@ -116,7 +169,7 @@
 .project-box-content {
   text-align: left;
   height: 70%;
-  font-size: 1.2vw;
+  font-size: max(1.2vw, 1.7vh);
   display: flex;
 }
 
@@ -144,7 +197,7 @@
   text-align: right;
   width: 80%;
   margin: auto 0;
-  font-size: min(1.7vw, 3vh);
+  font-size: min(1.7vw, 2.8vh);
 }
 
 .x {

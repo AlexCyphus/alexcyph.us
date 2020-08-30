@@ -17,6 +17,9 @@ function Overlay({display, toggleOverlay}) {
           <ProjectBox emoji="🏅" projectID="3" title="Certificates" description="Leading the research and development of Tandem’s most successful and profitable feature ever"/>
           <ProjectBox emoji="🇨🇴" projectID="4" title="VICO" description="Graduating from Canadian business school and starting as a Spanish speaking software engineer"/>
         </div>
+        <div className="row">
+          <ProjectBox emoji="👨‍💻" projectID="5" title="alexcyph.us" description="Designing and developing my second personal website in Figma → Reactstrap"/>
+        </div>
       </div>
     </div>
   ])
