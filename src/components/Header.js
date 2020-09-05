@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 function Header({display, link}) {
   return ([
-    <Link to={link} style={{ textDecoration: 'none', color: "black"}} className="outer-header d-flex brd">
+    <Link to={link} style={{ textDecoration: 'none', color: "black"}} className="outer-header d-flex">
       <div className="inner-header m-auto">
         <h1 className="alexcyphus text-center">
           <span className="red">a</span>

@@ -3,8 +3,6 @@ import ArticleNavigation from './ArticleNavigation'
 import ArticleContent from './ArticleContent'
 import Header from './Header.js';
 import Emoji from './Emoji.js';
-import ProjectBox from './ProjectBox.js';
-
 
 function ProjectArticle({match, description, location}) {
 
