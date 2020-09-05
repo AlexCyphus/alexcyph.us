@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import Emoji from './Emoji'
 
 function ArticleNavigation({lastArticle, nextArticle}) {
   const next = "/project/" + nextArticle;
@@ -7,13 +8,13 @@ function ArticleNavigation({lastArticle, nextArticle}) {
   return ([
     <div className="outer-article-navigation d-flex">
       <div className="inner-article-navigation m-auto row text-center justify-content-center">
-        <Link to="/" className="col-auto tn">🏠 home</Link>
-        <div className="col-auto p-0">|</div>
-        <Link to="/o" className="col-auto tn">🗂 all projects</Link>
-        <div className="col-auto p-0">|</div>
-        <Link to={next} className="col-auto tn">→ next </Link>
-        <div className="col-auto p-0">|</div>
-        <Link to={last} className="col-auto tn">← last</Link>
+        <Link to="/" className="col-md-auto tn"><Emoji emoji="🏠" desc="house"/> home <Emoji emoji="🏠" desc="house"/></Link>
+        <div className="col-auto p-0 d-none d-md-inline">|</div>
+        <Link to="/o" className="col-md-auto tn"><Emoji emoji="🗂" desc="files"/> projects <Emoji emoji="🗂" desc="files"/></Link>
+        <div className="col-auto p-0 d-none d-md-inline">|</div>
+        <Link to={next} className="col-md-auto tn">→ next →</Link>
+        <div className="col-auto p-0 d-none d-md-inline">|</div>
+        <Link to={last} className="col-md-auto tn">← last ←</Link>
       </div>
     </div>
   ])

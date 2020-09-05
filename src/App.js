@@ -6,6 +6,8 @@ import Actions from './components/Actions.js';
 import Overlay from './components/Overlay.js';
 import { BrowserRouter as Router } from "react-router-dom"
 import Home from "./pages/Home"
+import Emoji from "./components/Emoji"
+
 
 
 class App extends Component {
@@ -13,7 +15,7 @@ class App extends Component {
     super(props)
     this.toggleOverlay = this.toggleOverlay.bind(this);
     const showOverlay = this.props.match.path;
-    if (showOverlay == "/o") {
+    if (showOverlay === "/o") {
       this.state = {overlay: true,}
     }
     else {
@@ -39,10 +41,10 @@ class App extends Component {
       <div className="outer-content d-flex brd">
         <div className="inner-content text-left">
           <div>
-            <p>>> hey there 👋 i’m alex </p>
-            <p>>> i’m a 🇬🇧 british / 🇨🇦 canadian currently living in berlin working @ tandem as a product manager </p>
+            <p>>> hey there <Emoji emoji="👋" desc="waving"/> i’m alex </p>
+            <p>>> i’m a <Emoji emoji="🇬🇧" desc="british-flag"/> british / <Emoji emoji="🇨🇦" desc="canadian-flag"/> canadian currently living in berlin working @ tandem as a product manager </p>
             <p>>> i previously worked at a 500 startups startup in colombia as a software engineer and interned in spain and canada</p>
-            <p>>> i speak english 🇨🇦 + spanish 🇨🇴, am learning german 🇩🇪, and want to learn portuguese 🇧🇷 next </p>
+            <p>>> i speak english <Emoji emoji="🇨🇦" desc="canadian-flag"/> + spanish <Emoji emoji="🇨🇴" desc="colombian-flag"/>, am learning german <Emoji emoji="🇩🇪" desc="german-flag"/>, and want to learn portuguese <Emoji emoji="🇧🇷" desc="brazilian-flag"/> next </p>
             <p className="m-0">>> always interested to meet interesting new people and discuss interesting new things</p>
           </div>
         </div>
@@ -56,7 +58,7 @@ class App extends Component {
     </div>
   </div>
   );
-}
+  }
 }
 
 export default App;

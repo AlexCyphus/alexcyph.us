@@ -19,6 +19,7 @@ function Overlay({display, toggleOverlay}) {
         </div>
         <div className="row">
           <ProjectBox emoji="👨‍💻" projectID="5" title="alexcyph.us" description="Designing and developing my second personal website in Figma → Reactstrap"/>
+          <ProjectBox emoji="🌎" projectID="6" title="Languages" description="My ongoing battles with the Spanish rr and German adjective endings"/>
         </div>
       </div>
     </div>

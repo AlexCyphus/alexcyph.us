@@ -2,6 +2,8 @@ import React from 'react';
 import ArticleNavigation from './ArticleNavigation'
 import ArticleContent from './ArticleContent'
 import Header from './Header.js';
+import Emoji from './Emoji.js';
+import ProjectBox from './ProjectBox.js';
 
 
 function ProjectArticle({match, description, location}) {
@@ -39,21 +41,21 @@ function ProjectArticle({match, description, location}) {
       desc = "Designing and developing my second personal website in Figma → Reactstrap"
       emoji = "👨‍💻"
       break;
+    default:
+      break
   }
-
-  console.log(title)
 
   var next = parseInt(projectID) + 1
   var last = parseInt(projectID) - 1
 
-  if (next == 6){next = 1}
-  if (last == 0){last = 5}
+  if (next === 6){next = 1}
+  if (last === 0){last = 5}
 
   return ([
     <div className="app">
       <Header link="/"/>
       <div>
-      <p className="article-header text-center brd">{emoji} {title} {emoji}</p>
+      <p className="article-header text-center brd"><Emoji emoji={emoji} desc="emoji"/> {title} <Emoji emoji={emoji} desc="emoji"/></p>
       <p className="article-description brd text-center">{desc}</p>
       </div>
       <ArticleContent projectID={projectID} className="brd"/>
