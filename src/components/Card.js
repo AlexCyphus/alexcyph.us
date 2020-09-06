@@ -3,7 +3,7 @@ import Emoji from './Emoji';
 
 function Card({toggleCard, display}) {
   return ([
-    <div className="outer-card" style={{display: display}} onClick={toggleCard}>
+    <div className="outer-card" style={{display: display}}>
       <div className="m-auto row inner-card d-flex container drop-shadow-black">
       <div id="close-card-row col-12" className="clickable tn-2" style={{position: "absolute"}}>
         <p id="close-card" className="col-auto" onClick={toggleCard}>x</p>
@@ -25,7 +25,7 @@ function Card({toggleCard, display}) {
           </div>
         </div>
       </div>
-      <div className="black-background"></div>
+      <div className="black-background" onClick={toggleCard}></div>
     </div>
   ])
 }

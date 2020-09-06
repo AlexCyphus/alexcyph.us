@@ -17,10 +17,10 @@ class App extends Component {
     this.toggleCard = this.toggleCard.bind(this);
     const showOverlay = this.props.match.path;
     if (showOverlay === "/o") {
-      this.state = {overlay: true, card: true,}
+      this.state = {overlay: true, card: false,}
     }
     else {
-      this.state = {overlay: false, card: true,}
+      this.state = {overlay: false, card: false,}
     }
     console.log(this.state.card)
   }
