@@ -288,6 +288,18 @@
   padding: 0 10px;
 }
 
+.tn-2 {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.tn-2:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 .tn:hover {
   text-decoration: none;
   color: black;
