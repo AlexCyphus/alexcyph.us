@@ -18,7 +18,7 @@
   }
 
   .outer-content {
-    height: 65vh !important;
+    height: 72vh !important;
   }
 
   .inner-content {
@@ -67,7 +67,7 @@
     height: 5vh !important;
   }
   .outer-actions {
-    height: 17vh !important;
+    height: 10vh !important;
   }
   .action {
     padding: 5px;
@@ -112,7 +112,7 @@
 }
 
 .outer-actions {
-  height: 17vh;
+  height: 10vh;
 }
 
 .outer-footer {
