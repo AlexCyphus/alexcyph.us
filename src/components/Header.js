@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 function Header({frame, iterateFrame}) {
   let frameNum = "/images/frame-" + frame + ".png"
   return ([
-    <div className="inner-header m-auto" onClick={iterateFrame}>
-      <img src={frameNum} id="header-image"></img>
+    <div className="inner-header m-auto" >
+      <img src={frameNum} className="header-image"></img>
     </div>
   ])
 }

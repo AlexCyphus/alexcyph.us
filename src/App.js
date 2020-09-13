@@ -64,7 +64,6 @@ class App extends Component {
       <Card display={this.state.card ? 'flex' : 'none'} toggleCard={this.toggleCard}/>
       <div className="app text-center">
         <Overlay display={this.state.overlay ? 'flex' : 'none'} toggleOverlay={this.toggleOverlay}/>
-        <Router exact path="/home" component={Home}/>
         <div style={{display: this.state.overlay ? "none" : "block"}}>
           <div className="outer-header d-flex brd">
             <Header frame={this.state.frame} iterateFrame={this.iterateFrame}/>

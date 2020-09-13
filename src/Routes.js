@@ -3,7 +3,8 @@ import App from "./App";
 import {Route} from "react-router-dom"
 import ProjectArticle from './components/ProjectArticle.js';
 
-function Routes() {
+function Routes({frame, iterateFrame}) {
+  console.log("the frame is:", frame)
   return (
     <div>
       <Route exact path="/" component={App} showOverlay={false}/>

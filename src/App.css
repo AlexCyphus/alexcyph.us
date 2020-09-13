@@ -430,7 +430,13 @@
   }
 }
 
-#header-image {
+.header-image {
   width: 50%;
   height: 50%;
+  margin: auto;
+  padding: 30px;
+}
+
+.inner-header {
+  display: flex;
 }
