@@ -5,7 +5,7 @@ function Card({toggleCard, display}) {
   return ([
     <div className="outer-card" style={{display: display}}>
       <div className="m-auto row inner-card d-flex container drop-shadow-black">
-      <div id="close-card-row col-12" className="clickable tn-2" style={{position: "absolute"}}>
+      <div id="close-card-row" className="clickable tn-2" style={{position: "absolute"}}>
         <p id="close-card" className="col-auto" onClick={toggleCard}>x</p>
       </div>
         <div className="inner-inner-card row d-flex m-auto">

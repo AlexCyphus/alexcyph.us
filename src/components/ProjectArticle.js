@@ -53,14 +53,16 @@ function ProjectArticle({match, description, location}) {
   const rand = Math.max(Math.floor(Math.random()*5), 1)
 
   return ([
-    <div className="app">
-    <Link to={"/"}><div className="brd"><Header link="/" frame={rand}/></div></Link>
-      <div>
-      <p className="article-header text-center brd"><Emoji emoji={emoji} desc="emoji"/> {title} <Emoji emoji={emoji} desc="emoji"/></p>
-      <p className="article-description brd text-center">{desc}</p>
+    <div id="background-0">
+      <div className="app">
+      <Link to={"/"}><div className="brd"><Header link="/" frame={rand}/></div></Link>
+        <div>
+        <p className="article-header text-center brd"><Emoji emoji={emoji} desc="emoji"/> {title} <Emoji emoji={emoji} desc="emoji"/></p>
+        <p className="article-description brd text-center">{desc}</p>
+        </div>
+        <ArticleContent projectID={projectID} className="brd"/>
+        <ArticleNavigation nextArticle={next} lastArticle={last}/>
       </div>
-      <ArticleContent projectID={projectID} className="brd"/>
-      <ArticleNavigation nextArticle={next} lastArticle={last}/>
     </div>
   ])
 
