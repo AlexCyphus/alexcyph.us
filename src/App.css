@@ -98,7 +98,7 @@
 }
 
 .brd {
-  border-bottom: 1px dashed black;
+  border-bottom: 2px dashed black;
 }
 
 .headings {
@@ -428,4 +428,9 @@
     left: 0;
     right: 0
   }
+}
+
+#header-image {
+  width: 50%;
+  height: 50%;
 }

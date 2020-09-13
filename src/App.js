@@ -17,12 +17,19 @@ class App extends Component {
     this.toggleCard = this.toggleCard.bind(this);
     const showOverlay = this.props.match.path;
     if (showOverlay === "/o") {
-      this.state = {overlay: true, card: false,}
+      this.state = {overlay: true, card: false, frame: 2}
     }
     else {
-      this.state = {overlay: false, card: false,}
+      this.state = {overlay: false, card: false, frame: 2}
     }
-    console.log(this.state.card)
+    this.setInterval = setInterval(() => {
+      if (this.state.frame) {
+        if (this.state.frame < 4) {
+          this.setState({frame: this.state.frame + 1})
+        }
+        else {this.setState({frame: 1})}
+      }
+    }, 350)
   }
   toggleOverlay() {
     this.setState({overlay: !this.state.overlay});
@@ -32,6 +39,24 @@ class App extends Component {
     this.setState({card: !this.state.card});
     console.log(this.state.card)
   }
+
+  iterateFrame(){
+    if (this.state.frame) {
+      if (this.state.frame < 4){
+        this.setState({frame: this.state.frame + 1})
+      }
+      else {
+        this.setState({frame: 1})
+      }
+    }
+    else {
+      this.setState({frame: 1})
+    }
+
+  }
+
+
+
   render() {
 
     return (
@@ -42,16 +67,16 @@ class App extends Component {
         <Router exact path="/home" component={Home}/>
         <div style={{display: this.state.overlay ? "none" : "block"}}>
           <div className="outer-header d-flex brd">
-            <Header/>
+            <Header frame={this.state.frame} iterateFrame={this.iterateFrame}/>
           </div>
           <div className="outer-content d-flex brd">
             <div className="inner-content text-left">
               <div>
-                <p>>> hey there <Emoji emoji="👋" desc="waving"/> i’m alex </p>
-                <p>>> i’m a <Emoji emoji="🇬🇧" desc="british-flag"/> british / <Emoji emoji="🇨🇦" desc="canadian-flag"/> canadian currently living in berlin working @ tandem as a product manager </p>
-                <p>>> i previously worked at a 500 startups startup in colombia as a software engineer and interned in spain and canada</p>
-                <p>>> i speak english <Emoji emoji="🇨🇦" desc="canadian-flag"/> + spanish <Emoji emoji="🇨🇴" desc="colombian-flag"/>, am learning german <Emoji emoji="🇩🇪" desc="german-flag"/>, and want to learn portuguese <Emoji emoji="🇧🇷" desc="brazilian-flag"/> next </p>
-                <p className="m-0">>> always interested to meet interesting new people and discuss interesting new things</p>
+                <p> hey there <Emoji emoji="👋" desc="waving"/> i’m alex </p>
+                <p> i’m a <Emoji emoji="🇬🇧" desc="british-flag"/> british / <Emoji emoji="🇨🇦" desc="canadian-flag"/> canadian currently living in berlin working @ tandem as a product manager </p>
+                <p> i previously worked at a 500 startups startup in colombia as a software engineer and interned in spain and canada</p>
+                <p> i speak english <Emoji emoji="🇨🇦" desc="canadian-flag"/> + spanish <Emoji emoji="🇨🇴" desc="colombian-flag"/>, am learning german <Emoji emoji="🇩🇪" desc="german-flag"/>, and want to learn portuguese <Emoji emoji="🇧🇷" desc="brazilian-flag"/> next </p>
+                <p className="m-0"> always interested to meet interesting new people and discuss interesting new things</p>
               </div>
             </div>
           </div>
