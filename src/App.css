@@ -104,7 +104,7 @@
 }
 
 .outer-content {
-  height: 55vh;
+  height: 63vh;
 }
 
 .inner-content {
@@ -439,7 +439,7 @@
 
 @media (max-width: 360px) {
   .inner-content {
-    font-size: min(4.3vw, 14px) !important;
+    font-size: min(4.1vw, 14px, 2.2vh) !important
   }
 }
 
@@ -451,7 +451,9 @@
   height: 25vw;
   margin: auto;
   padding: 10px;
-  max-height: 150px;
+  max-height: min(80%, 200px) !important;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .inner-header {
@@ -469,4 +471,22 @@
   background-image: url('/images/background-2.png');
   background-size: cover;
   height: 100vh;
+}
+
+@media (min-height: 1000px) and (min-width: 800px) {
+  .outer-content {
+    font-size: 26px !important
+  }
+
+}
+
+@media (min-width: 580px) {
+  .action {
+    font-size: max(20px, 2vw, 2.5vh);
+  }
+}
+
+#article {
+  height: 200px;
+  padding: 30px 0;
 }

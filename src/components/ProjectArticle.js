@@ -55,7 +55,7 @@ function ProjectArticle({match, description, location}) {
   return ([
     <div id="background-0">
       <div className="app">
-      <Link to={"/"}><div className="brd"><Header link="/" frame={rand}/></div></Link>
+      <Link to={"/"}><div className="brd"><Header link="/" frame={rand} specId={"article"}/></div></Link>
         <div>
         <p className="article-header text-center brd"><Emoji emoji={emoji} desc="emoji"/> {title} <Emoji emoji={emoji} desc="emoji"/></p>
         <p className="article-description brd text-center">{desc}</p>
