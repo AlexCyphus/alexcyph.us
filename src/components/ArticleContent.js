@@ -22,7 +22,7 @@ function ArticleContent({projectID}) {
   // eprojects
   if(projectID === '2') {
     return ([
-      <div className="">
+      <div className="article-content">
         <p>eProjects is UBC’s largest entrepreneurship club and my child. In my third year of university I became the VP Finance (managing the budget and accounts and other riveting tasks) because my friend was in the club and really enjoyed it. I spent the year making like minded friends, meeting CEOs, running amazing events, and having a great time. I liked it so much that while on exchange in Barcelona I decided to run for President for the next year. Thankfully myself and my Co-President won and had the tricky task of budgeting, planning, and hiring as 15 member team with a 9-hour time difference. </p>
         <p>Despite the chaos it felt like at the time. We started the year with a team of 15 passionate students and had successfully raised more money from companies (like RBC, EY, V4C, and more) than any other year before. </p>
         <p>Luckily the chaos didn’t stop there, and we arranged ran a code-free Hackathon, speaker series with entrepreneurs, startup tours + talks, panels, and networking nights. The single most stressful moment occurred at CEO Dinner Night, a dinner with 45 of Vancouver’s most important CEOs and startup execs and 45 of Vancouver’s most eager students. We spent the day racing around buying everything we needed, receiving endless catering orders, figuring out how to purchase a keg of beer for the guests, and setting everything up in the offices of a coding bootcamp. After 10 hours of running around - I got on stage to introduce myself, eProjects, and the event to Vancouver’s business leaders and a room full of my peers. As quite a nervous public speaker this was terrifying but ended up actually being a lot of fun hosting the night. It went fine but I did accidentally play ABBA through the office speakers when I plugged in my PowerPoint. </p>
@@ -36,7 +36,7 @@ function ArticleContent({projectID}) {
   //
   if(projectID === '3') {
     return ([
-      <div className="">
+      <div className="article-content">
         xx
       </div>
     ])
@@ -44,7 +44,7 @@ function ArticleContent({projectID}) {
   // User Personas Content
   if(projectID === '4') {
     return ([
-      <div className="article-content brd">
+      <div className="article-content">
         <p>As the title suggests - I had a minor identity crisis throughout university and decided that the world of high finance <Emoji emoji="📈" desc="chart"/> was not for me and I instead wanted to do something in tech. At the time, I was under the impression that tech companies were software developers and accountants and nothing in between. So over the course of three years, I went from struggling to understand the difference between margins and tabs to making practice projects in JavaScript and competing in a <a className="article-link" href="http://www.lumohacks.com">hackathon</a> (placing a cool 15th place).</p>
         <p>I became mildly obsessed with learning to code and after about a year of learning I put it to the side to learn Spanish while on exchange in Barcelona, Spain (my now favorite city on the planet).  I then quite obsessively studied Spanish, got to low-level-gringo-fluency and came back to Canada to obsess over both Spanish and coding.</p>
         <p>In my last year of university, I felt quite stretched by studying my final year of a finance + economics degree, running <Link to="/project/2" className="article-link tn"> eProjects</Link>, and trying to learn as much about Spanish and web development as I could. So I decided the next logical step would be to graduate, move to a country where very little English is spoken, where I can work hands on as a software engineer. After a quick Google search for my criteria of “cleanest” Spanish, lowest levels of English, highest levels of safety, and tech hubs, I eventually settled on either Lima, Bogota, and Medellín. </p>
@@ -68,7 +68,7 @@ function ArticleContent({projectID}) {
 
   if(projectID === '5') {
     return ([
-      <div className="">
+      <div className="article-content">
         personal website
       </div>
     ])
