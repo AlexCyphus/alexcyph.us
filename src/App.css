@@ -461,17 +461,8 @@
   height: 100%;
 }
 
-#background-0 {
-  background-image: url('/images/background-2.png');
-  background-size: cover;
-  height: 100%;
-}
 
-#background {
-  background-image: url('/images/background-2.png');
-  background-size: cover;
-  height: 100vh;
-}
+
 
 @media (min-height: 1000px) and (min-width: 800px) {
   .outer-content {
@@ -489,4 +480,66 @@
 #article {
   height: 200px;
   padding: 30px 0;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.blob {
+  width: 1595px;
+  height: 1500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  transform: rotate(-142deg);
+  animation-name: spin;
+}
+
+#blob-1 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221225%22 height=%221153%22 viewBox=%220 0 1225 1153%22%3E%3Cpath fill=%22%23FF8080%22 fill-rule=%22evenodd%22 d=%22M9.523914 565.250887C-29.4006228 364.699441 64.4040448 138.655918 275.141781 66.5250406c86.418836-29.5792609 239.096965-71.08571 355.906407-65.46260589C736.736573 6.15018088 816.123931 6.46728379 949.220016 84.2862185 1112.04729 179.488455 1147.93112 289.655433 1215.94332 529.325517 1268.27944 713.754228 1065.38794 925.672965 987.629403 978.467611c-75.537807 51.286869-207.011199 161.093519-312.368499 171.708799C533.313704 1164.47832 417.073466 1110.44243 301.706715 1038.14248 169.53964 955.313832 75.2329583 903.804533 9.523914 565.250887z%22/%3E%3C/svg%3E");
+  left: 50vw;
+  bottom: 35vh;
+  animation-duration: 20s;
+  overflow-x: hidden;
+
+}
+
+#blob-2 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221225%22 height=%221153%22 viewBox=%220 0 1225 1153%22%3E%3Cpath fill=%22%2380A3FF%22 fill-rule=%22evenodd%22 d=%22M9.523914 565.250887C-29.4006228 364.699441 64.4040448 138.655918 275.141781 66.5250406c86.418836-29.5792609 239.096965-71.08571 355.906407-65.46260589C736.736573 6.15018088 816.123931 6.46728379 949.220016 84.2862185 1112.04729 179.488455 1147.93112 289.655433 1215.94332 529.325517 1268.27944 713.754228 1065.38794 925.672965 987.629403 978.467611c-75.537807 51.286869-207.011199 161.093519-312.368499 171.708799C533.313704 1164.47832 417.073466 1110.44243 301.706715 1038.14248 169.53964 955.313832 75.2329583 903.804533 9.523914 565.250887z%22/%3E%3C/svg%3E");
+  right: 60vw;
+  top: 50vh;
+  animation-duration: 30s;
+}
+
+/* we want this in smaller vp */
+#background {
+  /*background-image: url('/images/background-2.png');*/
+  background-size: cover;
+  height: 100vh;
+}
+
+#background-0 {
+  background-image: url('/images/background-2.png');
+  background-size: cover;
+  height: 100%;
+}
+
+.blobholder {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  overflow:hidden;
 }

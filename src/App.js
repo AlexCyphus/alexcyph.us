@@ -55,12 +55,16 @@ class App extends Component {
 
   }
 
-
   render() {
     let background = !this.state.overlay ? "background" : "background-0"
+    let blob2 = !this.state.overlay ? "blob-2" : "d-none"
     return (
-    <div id={background} >
+    <div>
       <Card display={this.state.card ? 'flex' : 'none'} toggleCard={this.toggleCard}/>
+      <div className="blobholder">
+        <div id="blob-1" class="blob"></div>
+        <div id={blob2} class="blob"></div>
+      </div>
       <div className="app text-center">
         <Overlay display={this.state.overlay ? 'flex' : 'none'} toggleOverlay={this.toggleOverlay}/>
         <div style={{display: this.state.overlay ? "none" : "block"}}>

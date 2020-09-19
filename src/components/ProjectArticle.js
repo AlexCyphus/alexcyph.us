@@ -53,7 +53,10 @@ function ProjectArticle({match, description, location}) {
   const rand = Math.max(Math.floor(Math.random()*5), 1)
 
   return ([
-    <div id="background-0">
+    <div id="none">
+    <div className="blobholder">
+      <div id="blob-1" class="blob"></div>
+    </div>
       <div className="app">
       <Link to={"/"}><div className="brd"><Header link="/" frame={rand} specId={"article"}/></div></Link>
         <div>
@@ -62,6 +65,10 @@ function ProjectArticle({match, description, location}) {
         </div>
         <ArticleContent projectID={projectID} className="brd"/>
         <ArticleNavigation nextArticle={next} lastArticle={last}/>
+        <div className="blobholder-0">
+          <div id="blob-1"></div>
+          <div id="blob-2"></div>
+        </div>
       </div>
     </div>
   ])
