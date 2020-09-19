@@ -12,9 +12,9 @@ function ArticleNavigation({lastArticle, nextArticle}) {
         <div className="col-auto p-0 d-none d-md-inline">|</div>
         <Link to="/o" className="col-md-auto tn"><Emoji emoji="🗂" desc="files"/> projects <Emoji emoji="🗂" desc="files"/></Link>
         <div className="col-auto p-0 d-none d-md-inline">|</div>
-        <Link to={next} className="col-md-auto tn">→ next →</Link>
-        <div className="col-auto p-0 d-none d-md-inline">|</div>
         <Link to={last} className="col-md-auto tn">← last ←</Link>
+        <div className="col-auto p-0 d-none d-md-inline">|</div>
+        <Link to={next} className="col-md-auto tn">→ next →</Link>
       </div>
     </div>
   ])

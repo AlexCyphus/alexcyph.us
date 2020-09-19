@@ -17,7 +17,7 @@ function ProjectArticle({match, description, location}) {
   switch(parseInt(projectID)){
     case 1:
       title = 'User Personas';
-      desc = 'Using Python + machine learning to extract knowledge from 650,000 data points'
+      desc = 'Using Python + machine learning to extract knowledge from ~1M data points'
       emoji = '📈'
       break;
     case 2:
