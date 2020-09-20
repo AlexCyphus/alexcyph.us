@@ -27,7 +27,7 @@ function ProjectArticle({match, description, location}) {
       break;
     case 3:
       title = 'Certificates'
-      desc = 'Leading the research and development of Tandem’s most successful and profitable feature ever'
+      desc = 'Coming soon...'
       emoji = '🏅'
       break;
     case 4:

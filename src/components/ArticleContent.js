@@ -37,7 +37,7 @@ function ArticleContent({projectID}) {
   if(projectID === '3') {
     return ([
       <div className="article-content">
-        xx
+        Coming soon...
       </div>
     ])
   }
