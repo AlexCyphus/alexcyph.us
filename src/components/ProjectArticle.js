@@ -40,6 +40,11 @@ function ProjectArticle({match, description, location}) {
       desc = "Designing and developing my second personal website in Figma → Reactstrap"
       emoji = "👨‍💻"
       break;
+    case 6:
+      title = 'Languages'
+      desc = "My ongoing battles with the Spanish rr and German adjective endings"
+      emoji = "🌎"
+      break;
     default:
       break
   }
