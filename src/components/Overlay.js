@@ -17,6 +17,10 @@ function Overlay({display, toggleOverlay}) {
           <ProjectBox emoji="🇨🇴" projectID="4" title="VICO" description="Graduating from Canadian business school and starting as a Spanish speaking software engineer"/>
           <ProjectBox emoji="🌎" projectID="6" title="Languages" description="My ongoing battles with the Spanish rr and German adjective endings"/>
         </div>
+        <div className="row">
+          <ProjectBox emoji="❓" projectID="" title="Coming Soon" description="Very soon..."/>
+          <ProjectBox emoji="❓" projectID="" title="Coming Soon" description="Very soon..."/>
+        </div>
       </div>
     </div>
   ])

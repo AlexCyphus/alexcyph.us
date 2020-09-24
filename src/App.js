@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import Emoji from "./components/Emoji"
 import Card from "./components/Card"
 
+// being kept awake by Kaffeine https://kaffeine.herokuapp.com/
 
 class App extends Component {
   constructor(props) {
