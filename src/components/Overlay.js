@@ -15,12 +15,7 @@ function Overlay({display, toggleOverlay}) {
         </div>
         <div className="row">
           <ProjectBox emoji="🇨🇴" projectID="4" title="VICO" description="Graduating from Canadian business school and starting as a Spanish speaking software engineer"/>
-          <ProjectBox emoji="👨‍💻" projectID="5" title="alexcyph.us" description="Designing and developing my second personal website in Figma → Reactstrap"/>
-        </div>
-        <div className="row">
           <ProjectBox emoji="🌎" projectID="6" title="Languages" description="My ongoing battles with the Spanish rr and German adjective endings"/>
-          <ProjectBox emoji="🏅" projectID="3" title="Certificates" description="Coming soon..."/>
-
         </div>
       </div>
     </div>
@@ -28,3 +23,10 @@ function Overlay({display, toggleOverlay}) {
 }
 
 export default Overlay
+
+/*
+
+To be added later
+<ProjectBox emoji="👨‍💻" projectID="5" title="alexcyph.us" description="Designing and developing my second personal website in Figma → Reactstrap"/>
+<ProjectBox emoji="🏅" projectID="3" title="Certificates" description="Coming soon..."/>
+*/

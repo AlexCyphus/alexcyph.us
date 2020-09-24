@@ -77,7 +77,7 @@ function ArticleContent({projectID}) {
   if(projectID === '6') {
     return ([
       <div className="article-content">
-        <p>Growing up with multi-lingual parents (English, French, Spanish, and German) I was amazed by their language flexing from a very young age and knew that some point I wanted to be equally as annoying to those who couldn't understand me. Since then, I have lived in Spain, worked in Spanish in Colombia, and am now learning German in Berlin.</p>
+        <p>Growing up with multi-lingual parents (English, French, Spanish, and German) I was amazed by their language flexing from a very young age and knew that at some point I wanted to be equally as annoying to those who couldn't understand me. Since then, I have lived in Spain, worked in Spanish in Colombia, and am now learning German in Berlin.</p>
         <p>This article is mainly to answer two questions I get quite frequently from friends which are how to learn a language and what tools should I use?</p>
         <p>I am obviously no expert (I still haven’t nailed the Spanish subjunctive or German adjective endings) but have collected some resources I found particularly helpful.</p>
         <p>---</p>
