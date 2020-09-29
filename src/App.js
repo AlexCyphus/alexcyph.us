@@ -87,7 +87,7 @@ class App extends Component {
           <div className="outer-actions d-flex brd">
             <Actions toggleOverlay={this.toggleOverlay} toggleCard={this.toggleCard} resume="hello"/>
           </div>
-          <div className="outer-footer d-flex">
+          <div className="outer-footer d-flex justify-content-center">
             <Footer/>
           </div>
         </div>

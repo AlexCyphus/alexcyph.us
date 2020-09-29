@@ -69,7 +69,16 @@ function ArticleContent({projectID}) {
   if(projectID === '5') {
     return ([
       <div className="article-content">
-        personal website
+        <p>Sometime in summer of 2020, my roommates girlfriend started learning React and I boastfully offered my help. I quickly realized that while I vaguely recognized a lot of the concepts and could vaguely answer most of the questions - I panicked and thought my React skills were slipping so immediately started this website.</p>
+        <p>I drafted the first version of the site using Figma which after numerous iterations looks like if you took the site to pieces, totally broke some of the pieces, and were displaying them on a table at a garage sale.</p>
+        <ArticleImage image={"figma-designs.png"} description="I love Figma" class="text-center"/>
+        <p>When in Colombia, I went to a talk about “atomic design” and loved the concept and tried designing the site to be as “atomic” as possible. This made it a LOT easier to change the design 300 times in the process.</p>
+        <p>I also learned some new skills in the process like React Router, more about the React Lifecycle, understood more deeply what the “this” keyword actually was, deployed for the first time with Heroku, and most importantly became freshly obsessed with React and coding in general.</p>
+        <p>I have regrets about the CSS as it approaches 400 lines and has quite a few not-best practices. I also had never developed for mobile and didn’t think about accounting for different mobile heights until way too late and wrote a number of questionable media queries. I also definitely would have kept track of font sizes a little better to maintain consistency - there are some pretty upsetting max/min vh/vw font sizes and I’m sure if you went out and found a weirdly shaped device you could see a strange version of the site (but hopefully not).</p>
+        <p>I also had some issues passing props later on because I wasn’t using the Router quite right and had to make some questionable band aid fixes.</p>
+        <p>When I finished, I found my old website that I made when I was first learning HTML and CSS in 2017. The site was just pure Bootstrap and it took me WEEKS of intensively working at it and is quite hideous. But the little icons bounced when you hovered over it and I still love that.</p>
+        <ArticleImage image={"old-site.png"} description="I both love and hate it at the same time" class="text-center"/>
+        <p>In summary - like everything in our world - the site and especially the code itself is imperfect BUT as long as everything keeps working and hopefully no one will ever look at the code - I’m going to leave it as is. I’m very pleased with how it turned out and even more pleased with all the things I learned in the process. </p>
       </div>
     ])
   }
