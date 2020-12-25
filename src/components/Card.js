@@ -17,7 +17,7 @@ function Card({toggleCard, display}) {
               <div className="col-auto m-auto" id="links">
                 <p id="my-name">alex (john) cyphus</p>
                 <p className="biz-card-link"><Emoji emoji="📍" desc="pin"/> berlin, germany</p>
-                <a className="tn-2" target="_blank" rel="noopener noreferrer" href="http://www.alexcyph.us"><p className="clickable biz-card-link pushed-in"><Emoji emoji="🌏" desc="planet"/> alexcyph.us</p></a>
+                <a className="tn-2" target="_blank" rel="noopener noreferrer" href="https://github.com/alexcyphus"><p className="clickable biz-card-link pushed-in"><img id="github-icon" src="./github.png"/> github.com/alexcyphus</p></a>
                 <a className="tn-2" target="_blank" rel="noopener noreferrer" href="mailto:alexjcyphus@gmail.com"><p className="clickable biz-card-link pushed-in"><Emoji emoji="📩" desc="email"/> alexjcyphus@gmail.com</p></a>
                 <a className="tn-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexcyphus/"><p className="clickable biz-card-link"><Emoji emoji="💼" desc="briefcase"/> linkedin.com/in/alexcyphus</p></a>
               </div>

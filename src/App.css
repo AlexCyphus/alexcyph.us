@@ -550,3 +550,8 @@
   z-index: -1;
   overflow:hidden;
 }
+
+#github-icon {
+  height: 14px;
+  width: 14px;
+}
