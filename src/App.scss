@@ -20,7 +20,7 @@ p {
   overflow-x: hidden;
 
   .header-image {
-    height: 16vh;
+    height: calc(max(16vh, 130px));
     padding: 35px;
   }
 
@@ -58,8 +58,9 @@ p {
 
 .project-box-container {
   @media (min-width: 768px) {
-    max-height: 80vh;
+    max-height: 100%;
     overflow-y: scroll;
+    padding-bottom: 15px;
   }
   
   overflow-x: hidden;
@@ -112,7 +113,7 @@ p {
 .project-box-content {
   text-align: left;
   height: 70%;
-  font-size: calc(max(0.9vw, 1.4vh));
+  font-size: calc(max(0.9vw, 1.4vh, 15px));
   display: flex;
 }
 
@@ -137,7 +138,7 @@ p {
   flex-wrap: wrap;
   width: 80%;
   margin: auto 0;
-  font-size: calc(max(0.9vw, 1.4vh))
+  font-size: calc(max(0.9vw, 1.4vh, 15px))
 }
 
 .outer-image {
@@ -328,7 +329,7 @@ p {
 
 @media (max-width: 500px) {
  .inner-content-container {
-   padding: 0 !important;
+   padding: 0 0 15px 0!important;
  } 
 }
 
