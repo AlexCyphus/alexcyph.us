@@ -1,130 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400&display=swap');
 
-/* Mobile */
-@media (max-width: 800px) {
-  /* Make margins not dramatic */
-  .app {
-    margin: 0 auto !important;
-    width: 80% !important;
-  }
-
-  .alexcyphus {
-    font-size: 10vw !important;
-    margin: 0 !important;
-  }
-
-  .outer-header {
-    height: 13vh !important;
-  }
-
-  .outer-content {
-    height: 72vh !important;
-  }
-
-  .inner-content {
-    font-size: min(4vw, 2.3vh) !important;
-  }
-
-  .headings {
-    display: none !important;
-  }
-
-  .inner-actions {
-    font-size: min(4vw, 2.3vh) !important;
-    padding: 0;
-  }
+p {
+  margin: 0;
 }
 
-@media (max-width: 989px) {
-  .project-box-content {
-    font-size: max(3vw, 1.7vh) !important;
-  }
-
-  .project-title {
-    font-size: max(3vw, 3vh) !important;
-  }
-
-  .emoji {
-    font-size: max(4.5vw, 4.5vh) !important;
-  }
-
-  .overlay {
-    margin: auto;
-    max-width: 85%;
-  }
-
-  .x {
-    font-size: 15vw !important;
-    margin: -10px 10px 10px 10px !important;
-  }
+* {
+  box-sizing: border-box;
 }
-
-@media (max-width: 1100px) {
-  .project-box-content {
-    font-size: 16.5px !important;
-  }
-}
-
-
-@media (max-width: 575px) {
-  .inner-actions {
-    font-size: min(5vw, 2.5vh) !important;
-  }
-  .outer-footer {
-    height: 5vh !important;
-  }
-  .outer-actions {
-    height: 10vh !important;
-  }
-  .action {
-    padding: 5px;
-  }
-  .overlay {
-    margin: auto;
-    max-width: 100%;
-  }
-  .inner-project-box {
-    padding: 15px 20px 15px 20px !important;
-  }
-}
-
 
 .app {
+  width: 100vw;
+  max-height: 100vh;
+  max-width: calc(max(100vw, 1400px));
   font-family: 'IBM Plex Mono', monospace;
-  color: black;
-  margin: 0 20vw;
-  max-width: 75%;
-  font-size: min(2vw, 2.5vh);
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  .header-image {
+    max-height: 20vh;
+    padding: 35px;
+    max-width: 100%;
+  }
+
+  .outer-container {
+    height: 80vh;
+    margin: 0 45px;
+
+    .inner-content-container {
+      max-height: 80vh;
+      overflow-y: hidden;
+      padding: 0 40px;
+    }
+  }
 }
 
-.outer-header {
-  height: 22vh;
-  margin: auto;
+.main-text-outer {
+  font-size: 1.5vw;
+  height: calc(100% - 33px);
+  line-height: 200%;
 }
 
-.alexcyphus {
-  font-size: 5.7vw;
+.main-text-container {
+  p {
+    padding-bottom: 15px;
+  }
 }
 
-.headings {
-  font-size: 1.7vw;
-}
-
-.outer-content {
-  height: 60vh;
-}
-
-.inner-content {
-  margin: auto;
-}
-
-.outer-actions {
-  height: 13vh;
-}
-
-.outer-footer {
-  height: 5vh;
-  font-size: max(1vw, 1.4vh);
+.project-box-container {
+  max-height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Colors */
@@ -138,26 +63,20 @@
   font-size: 3vw;
 }
 
-/* Overlay */
-.overlay {
-  width: 100%;
-}
-
 .clickable {
   cursor: pointer;
 }
 
 .outer-project-box {
-  height: 40vh;
-  display: flex;
   padding: 25px;
 }
 
 .inner-project-box {
   width: 100%;
   border: 1px black solid;
+  background-color: white;
   border-radius: 15px;
-  padding: 15px 50px 15px 50px;
+  padding: 15px 30px 15px 30px;
   -webkit-box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
   -moz-box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
   box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
@@ -172,13 +91,8 @@
 .project-box-content {
   text-align: left;
   height: 70%;
-  font-size: max(1.2vw, 1.7vh);
+  font-size: calc(max(1.2vw, 1.7vh));
   display: flex;
-}
-
-.project-box-content p {
-  margin: 0;
-  padding: 5px 0;
 }
 
 .project-box-header {
@@ -200,16 +114,7 @@
   text-align: right;
   width: 80%;
   margin: auto 0;
-  font-size: min(1.7vw, 2.8vh);
-}
-
-.x {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  margin: 20px 100px;
-  font-size: 75px;
-  font-weight: bold;
+  font-size: calc(min(1.7vw, 2.8vh));
 }
 
 .outer-image {
@@ -232,13 +137,13 @@
 }
 
 .article-header {
-  font-size: max(3vw, 3vh);
+  font-size: calc(max(3vw, 3vh));
   padding: 8px;
   margin: 0
 }
 
 .article-description {
-  font-size: max(20px, 1.5vw);
+  font-size: calc(max(20px, 1.5vw));
   padding: 8px;
   margin: 0
 }
@@ -396,7 +301,7 @@
 
 @media (max-width: 600px) {
   .biz-card-link {
-    font-size: max(3vw, 12px) !important;
+    font-size: calc(max(3vw, 12px)) !important;
     margin: 0;
   }
 
@@ -426,51 +331,6 @@
 
 }
 
-@media (max-width: 480px) {
-  .biz-card-link {
-    font-size: 12px !important;
-  }
-  #links {
-    left: 0;
-    right: 0
-  }
-
-  .inner-content {
-    font-size: min(3.8vw, 2.3vh) !important;
-  }
-
-  .project-title {
-    font-size: max(1.8vw, 1.7vh, 19px) !important;
-  }
-}
-
-@media (max-width: 360px) {
-  .inner-content {
-    font-size: min(4.1vw, 14px, 2.2vh) !important
-  }
-}
-
-.app {
-  max-width: none;
-}
-
-.header-image {
-  height: 25vw;
-  margin: auto;
-  padding: 10px;
-  max-height: min(80%, 200px) !important;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.inner-header {
-  display: flex;
-  height: 100%;
-}
-
-
-
-
 @media (min-height: 1000px) and (min-width: 800px) {
   .outer-content {
     font-size: 26px !important
@@ -480,7 +340,7 @@
 
 @media (min-width: 580px) {
   .action {
-    font-size: max(20px, 2vw, 2.5vh);
+    font-size: calc(max(20px, 2vw, 2.5vh));
   }
 }
 
@@ -530,28 +390,10 @@
   animation-duration: 30s;
 }
 
-/* we want this in smaller vp */
-#background {
-  /*background-image: url('/images/background-2.png');*/
-  background-size: cover;
-  height: 100vh;
-}
-
-#background-0 {
-  background-image: url('/images/background-2.png');
-  background-size: cover;
-  height: 100%;
-}
-
 .blobholder {
   height: 100vh;
   width: 100%;
   position: absolute;
   z-index: -1;
   overflow:hidden;
-}
-
-#github-icon {
-  height: 14px;
-  width: 14px;
 }

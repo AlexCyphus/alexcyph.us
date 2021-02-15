@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import './App.scss';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Actions from './components/Actions.js';
@@ -8,6 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 import Home from "./pages/Home"
 import Emoji from "./components/Emoji"
 import Card from "./components/Card"
+import ProjectBox from './components/ProjectBox'
 
 // being kept awake by Kaffeine https://kaffeine.herokuapp.com/
 
@@ -58,38 +59,45 @@ class App extends Component {
   render() {
     let background = !this.state.overlay ? "background" : "background-0"
     let blob2 = !this.state.overlay ? "blob-2" : "d-none"
+    
     return (
     <div>
-      <Card display={this.state.card ? 'flex' : 'none'} toggleCard={this.toggleCard}/>
       <div className="blobholder">
         <div id="blob-1" class="blob"></div>
         <div id={blob2} class="blob"></div>
       </div>
-      <div className="app text-center">
-        <Overlay display={this.state.overlay ? 'flex' : 'none'} toggleOverlay={this.toggleOverlay}/>
-        <div style={{display: this.state.overlay ? "none" : "block"}}>
+      <div className="app">
           <div className="outer-header d-flex brd">
             <Header frame={this.state.frame} iterateFrame={this.iterateFrame}/>
           </div>
-          <div className="outer-content d-flex brd">
-            <div className="inner-content text-left">
-              <div>
-                <p> hey there i’m alex <Emoji emoji="👋" desc="waving"/></p>
-                <p> i’m a <Emoji emoji="🇬🇧" desc="british-flag"/> british / <Emoji emoji="🇨🇦" desc="canadian-flag"/> canadian currently living in berlin working @ tandem as a product manager</p>
-                <p> i previously worked at a 500 startups startup in colombia as a software engineer and interned at startups in spain and canada</p>
-                <p> i studied finance + economics at the university of british columbia</p>
-                <p> i speak english <Emoji emoji="🇨🇦" desc="canadian-flag"/> + spanish <Emoji emoji="🇨🇴" desc="colombian-flag"/>, am learning german <Emoji emoji="🇩🇪" desc="german-flag"/>, and want to learn portuguese <Emoji emoji="🇧🇷" desc="brazilian-flag"/> next</p>
-                <p className="m-0"> always interested to meet interesting new people and discuss interesting new things</p>
+          <div className="outer-container d-flex brd row">
+            <div className="inner-content-container col-lg-6 container">
+              <div className="d-flex main-text-outer">
+                <div className="main-text-container m-auto">
+                  <p>>> hey there i’m alex <Emoji emoji="👋" desc="waving"/></p>
+                  <p>>> i’m a <Emoji emoji="🇬🇧" desc="british-flag"/> british / <Emoji emoji="🇨🇦" desc="canadian-flag"/> canadian living in berlin</p>
+                  <p>>> currently working as a Product Manager @ Tandem and developing Ameyo</p>
+                  <p>>> interested in languages (<Emoji emoji="🇨🇦" desc="canadian-flag"/>/<Emoji emoji="🇨🇴" desc="colombian-flag"/>/<Emoji emoji="🇩🇪" desc="german-flag"/>), economics, productivity, startups, product management, and coding (frontend)</p>
+                </div>
               </div>
             </div>
+            <div className="inner-content-container col-lg-6 container">
+                <div className="project-box-container row">
+                  <div className="col-md-6">
+                    <ProjectBox emoji="📈" projectID="1" title="Developing User Personas" description="Using Python + machine learning to extract knowledge from ~1M data points" />
+                    <ProjectBox emoji="🇨🇴" projectID="4" title="VICO" description="Graduating from Canadian business school and starting as a Spanish speaking software engineer"/>
+                    <ProjectBox emoji="🕸" projectID="2" title="Tandem Webviews" description="Creating a reusable component library to create realistic webview prototypes"/>
+                  </div>
+                  <div className="col-md-6">
+                  <ProjectBox emoji="🕗" projectID="" title="Ameyo" description="My Chrome Extension (unsuccessfully) competing with Trello, Jira, and Momentum all at once."/>
+                    <ProjectBox emoji="👨‍💻" projectID="5" title="alexcyph.us" description="Designing and developing my second personal website in Figma → Reactstrap"/>
+                    <ProjectBox emoji="🥇" projectID="2" title="Tandem Certificates" description="Developing Tandem's biggest new feature in years"/>
+                    <ProjectBox emoji="🅴" projectID="2" title="eProjects" description="Leading a team of 15 for UBC’s largest entrepreneurship club’s best year"/>
+                  </div>
+
+                </div>
+              </div>
           </div>
-          <div className="outer-actions d-flex brd">
-            <Actions toggleOverlay={this.toggleOverlay} toggleCard={this.toggleCard} resume="hello"/>
-          </div>
-          <div className="outer-footer d-flex justify-content-center">
-            <Footer/>
-          </div>
-        </div>
       </div>
     </div>
   );
