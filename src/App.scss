@@ -30,6 +30,7 @@ p {
     padding: 0 10px;
 
     .inner-content-container {
+      overflow-x: hidden;
       overflow-y: hidden;
       padding: 0 40px 15px 40px;
       
@@ -66,10 +67,12 @@ p {
   overflow-x: hidden;
 
   .col-md-6 {
+    overflow-x: hidden;
     @media (min-width: 768px) {
       padding: 0 0 10px 0;
     }
   }
+
 
   .outer-project-box {
     margin: 20px 7px 0px 7px;
@@ -129,7 +132,7 @@ p {
   text-align: left;
   width: 20%;
   font-size: calc(max(15px, 2.5vw));
-  margin: auto 5px 0 0
+  margin: auto 15px 0 0
 }
 
 .project-title {

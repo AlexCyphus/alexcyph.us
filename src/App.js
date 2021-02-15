@@ -71,9 +71,9 @@ class App extends Component {
             <Header frame={this.state.frame} iterateFrame={this.iterateFrame}/>
           </div>
           <div className="d-flex justify-content-center pb-3">
-            <p className="article-link white-link mr-lg-5 mr-2 px-3">linkedin</p>
-            <p className="article-link white-link mr-lg-5 mr-2 px-3">github</p>
-            <p className="article-link white-link px-3">email</p>
+            <a target="_blank" href="https://www.linkedin.com/in/alexcyphus/" className="article-link white-link mr-lg-5 mr-2 px-3">linkedin</a>
+            <a target="_blank" href="https://github.com/alexcyphus" className="article-link white-link mr-lg-5 mr-2 px-3">github</a>
+            <a target="_blank" href="mailto:alexjcyphus@gmail.com" className="article-link white-link px-3">email</a>
           </div>
           <div className="outer-container d-flex brd row">
             <div className="inner-content-container col-lg-6 text">
@@ -89,15 +89,16 @@ class App extends Component {
             <div className="inner-content-container col-lg-6 container">
                 <div className="project-box-container row">
                   <div className="col-md-6">
-                    <ProjectBox emoji="📈" projectID="1" title="User Personas" description="Using Python + machine learning to extract knowledge from ~1M data points" />
+                    <ProjectBox emoji="📈" projectID="1" title="User Personas" description="Using Python + machine learning to develop user personas from ~1M data points" />
                     <ProjectBox emoji="🇨🇴" projectID="4" title="VICO" description="Graduating from Canadian business school and starting as a Spanish speaking software engineer"/>
-                    <ProjectBox emoji="🕸" projectID="2" title="Tandem Webviews" description="Creating a reusable component library to create realistic webview prototypes"/>
+                    <ProjectBox emoji="🕸" projectID="2" title="Tandem Webviews" description="Creating a reusable component library to create realistic in-app prototypes"/>
+                    <ProjectBox emoji="🅴" projectID="2" title="eProjects" description="Leading a team of 15 for UBC’s largest entrepreneurship club’s best year"/>
                   </div>
                   <div className="col-md-6">
-                  <ProjectBox emoji="🕗" projectID="" title="Ameyo" description="My Chrome Extension (unsuccessfully) competing with Trello, Jira, and Momentum all at once"/>
+                    <ProjectBox emoji="🕗" projectID="" title="Ameyo" description="My Chrome Extension (unsuccessfully) competing with Trello, Jira, and Momentum all at once"/>
                     <ProjectBox emoji="👨‍💻" projectID="5" title="alexcyph.us" description="Designing and developing my second personal website in Figma → Reactstrap"/>
-                    <ProjectBox emoji="🥇" projectID="2" title="Tandem Certificates" description="Developing Tandem's biggest new feature in years"/>
-                    <ProjectBox emoji="🅴" projectID="2" title="eProjects" description="Leading a team of 15 for UBC’s largest entrepreneurship club’s best year"/>
+                    <ProjectBox emoji="🥇" projectID="2" title="Tandem Certificates" description="Product Manage-ing the development and revenue optimization of Tandem Certificates"/>
+                    <ProjectBox emoji="💬" projectID="2" title="Language Learning" description="My favorite language learning resources"/>
                   </div>
 
                 </div>
