@@ -61,35 +61,40 @@ class App extends Component {
     let blob2 = !this.state.overlay ? "blob-2" : "d-none"
     
     return (
-    <div>
+    <div class="d-flex">
       <div className="blobholder">
         <div id="blob-1" class="blob"></div>
         <div id={blob2} class="blob"></div>
       </div>
-      <div className="app">
+      <div className="app m-auto">
           <div className="outer-header d-flex brd">
             <Header frame={this.state.frame} iterateFrame={this.iterateFrame}/>
           </div>
+          <div className="d-flex justify-content-center pb-3">
+            <p className="article-link white-link mr-lg-5 mr-2 px-3">linkedin</p>
+            <p className="article-link white-link mr-lg-5 mr-2 px-3">github</p>
+            <p className="article-link white-link px-3">email</p>
+          </div>
           <div className="outer-container d-flex brd row">
-            <div className="inner-content-container col-lg-6 container">
+            <div className="inner-content-container col-lg-6 text">
               <div className="d-flex main-text-outer">
                 <div className="main-text-container m-auto">
                   <p>>> hey there i’m alex <Emoji emoji="👋" desc="waving"/></p>
                   <p>>> i’m a <Emoji emoji="🇬🇧" desc="british-flag"/> british / <Emoji emoji="🇨🇦" desc="canadian-flag"/> canadian living in berlin</p>
-                  <p>>> currently working as a Product Manager @ Tandem and developing Ameyo</p>
-                  <p>>> interested in languages (<Emoji emoji="🇨🇦" desc="canadian-flag"/>/<Emoji emoji="🇨🇴" desc="colombian-flag"/>/<Emoji emoji="🇩🇪" desc="german-flag"/>), economics, productivity, startups, product management, and coding (frontend)</p>
+                  <p>>> currently working as a product manager at <a href="http://www.tandem.net" target="_blank" className="article-link">tandem</a> and developing <a href="https://chrome.google.com/webstore/detail/ameyo/bocdgdckommbhbffgloaoefepalhiplh" className="article-link">ameyo</a></p>
+                  <p>>> interested in languages (<Emoji emoji="🇨🇦" desc="canadian-flag"/>/<Emoji emoji="🇨🇴" desc="colombian-flag"/>/<Emoji emoji="🇩🇪" desc="german-flag"/>), economics, productivity, startups, product management, and frontend development</p>
                 </div>
               </div>
             </div>
             <div className="inner-content-container col-lg-6 container">
                 <div className="project-box-container row">
                   <div className="col-md-6">
-                    <ProjectBox emoji="📈" projectID="1" title="Developing User Personas" description="Using Python + machine learning to extract knowledge from ~1M data points" />
+                    <ProjectBox emoji="📈" projectID="1" title="User Personas" description="Using Python + machine learning to extract knowledge from ~1M data points" />
                     <ProjectBox emoji="🇨🇴" projectID="4" title="VICO" description="Graduating from Canadian business school and starting as a Spanish speaking software engineer"/>
                     <ProjectBox emoji="🕸" projectID="2" title="Tandem Webviews" description="Creating a reusable component library to create realistic webview prototypes"/>
                   </div>
                   <div className="col-md-6">
-                  <ProjectBox emoji="🕗" projectID="" title="Ameyo" description="My Chrome Extension (unsuccessfully) competing with Trello, Jira, and Momentum all at once."/>
+                  <ProjectBox emoji="🕗" projectID="" title="Ameyo" description="My Chrome Extension (unsuccessfully) competing with Trello, Jira, and Momentum all at once"/>
                     <ProjectBox emoji="👨‍💻" projectID="5" title="alexcyph.us" description="Designing and developing my second personal website in Figma → Reactstrap"/>
                     <ProjectBox emoji="🥇" projectID="2" title="Tandem Certificates" description="Developing Tandem's biggest new feature in years"/>
                     <ProjectBox emoji="🅴" projectID="2" title="eProjects" description="Leading a team of 15 for UBC’s largest entrepreneurship club’s best year"/>

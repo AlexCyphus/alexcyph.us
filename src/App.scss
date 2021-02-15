@@ -11,31 +11,41 @@ p {
 .app {
   width: 100vw;
   max-height: 100vh;
-  max-width: calc(max(100vw, 1400px));
+  height: 100vh;
+  max-width: 1600px;
   font-family: 'IBM Plex Mono', monospace;
-  overflow-y: hidden;
+  @media (min-width: 768px) {
+    overflow-y: hidden; 
+  }
   overflow-x: hidden;
 
   .header-image {
-    max-height: 20vh;
+    height: 16vh;
     padding: 35px;
-    max-width: 100%;
   }
 
   .outer-container {
     height: 80vh;
-    margin: 0 45px;
+    margin: 0 calc(min(45px, 1vw));
+    padding: 0 10px;
 
     .inner-content-container {
-      max-height: 80vh;
       overflow-y: hidden;
-      padding: 0 40px;
+      padding: 0 40px 15px 40px;
+      
+      @media (min-width: 768px) {
+        max-height: 80vh;
+      }
+
+      &.text {
+        padding: 0 40px;
+      }
     }
   }
 }
 
 .main-text-outer {
-  font-size: 1.5vw;
+  font-size: calc(max(15px, 1.5vw));
   height: calc(100% - 33px);
   line-height: 200%;
 }
@@ -47,9 +57,23 @@ p {
 }
 
 .project-box-container {
-  max-height: 80vh;
-  overflow-y: scroll;
+  @media (min-width: 768px) {
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+  
   overflow-x: hidden;
+
+  .col-md-6 {
+    @media (min-width: 768px) {
+      padding: 0 0 10px 0;
+    }
+  }
+
+  .outer-project-box {
+    margin: 20px 7px 0px 7px;
+  }
+  
 }
 
 /* Colors */
@@ -67,12 +91,9 @@ p {
   cursor: pointer;
 }
 
-.outer-project-box {
-  padding: 25px;
-}
+
 
 .inner-project-box {
-  width: 100%;
   border: 1px black solid;
   background-color: white;
   border-radius: 15px;
@@ -91,7 +112,7 @@ p {
 .project-box-content {
   text-align: left;
   height: 70%;
-  font-size: calc(max(1.2vw, 1.7vh));
+  font-size: calc(max(0.9vw, 1.4vh));
   display: flex;
 }
 
@@ -99,22 +120,24 @@ p {
   width: 100%;
   height: 30%;
   display: flex;
+  font-weight: bolder;
 }
 
 .emoji {
   display: inline;
   text-align: left;
   width: 20%;
-  font-size: 3vw;
-  margin: auto 0;
+  font-size: calc(max(15px, 2.5vw));
+  margin: auto 5px 0 0
 }
 
 .project-title {
   display: inline;
   text-align: right;
+  flex-wrap: wrap;
   width: 80%;
   margin: auto 0;
-  font-size: calc(min(1.7vw, 2.8vh));
+  font-size: calc(max(0.9vw, 1.4vh))
 }
 
 .outer-image {
@@ -155,6 +178,10 @@ p {
   color: black;
   border-radius: 8px;
   text-decoration: none;
+
+  &.white-link {
+    background-color: white;
+  }
 }
 
 .article-link:hover {
@@ -299,54 +326,10 @@ p {
   margin-left: 10px;
 }
 
-@media (max-width: 600px) {
-  .biz-card-link {
-    font-size: calc(max(3vw, 12px)) !important;
-    margin: 0;
-  }
-
-  #close-card {
-    font-size: 30px;
-  }
-
-  #my-face {
-    display: none;
-  }
-
-  #my-name {
-    font-size: 4.5vw;
-  }
-
-  .pushed-in {
-    margin: 0;
-  }
-
-  #my-face-container {
-    padding: 0 !important;
-  }
-
-  #links {
-    right: 0;
-  }
-
-}
-
-@media (min-height: 1000px) and (min-width: 800px) {
-  .outer-content {
-    font-size: 26px !important
-  }
-
-}
-
-@media (min-width: 580px) {
-  .action {
-    font-size: calc(max(20px, 2vw, 2.5vh));
-  }
-}
-
-#article {
-  height: 200px;
-  padding: 30px 0;
+@media (max-width: 500px) {
+ .inner-content-container {
+   padding: 0 !important;
+ } 
 }
 
 @-moz-keyframes spin {
