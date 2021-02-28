@@ -8,7 +8,6 @@ function Routes({frame, iterateFrame}) {
   return (
     <div>
       <Route exact path="/" component={App} showOverlay={false}/>
-      <Route exact path="/o" component={App} showOverlay={true}/>
       <Route exact path ="/project/:projectID" component={ProjectArticle}/>
     </div>
   )

@@ -93,14 +93,14 @@ class App extends Component {
                   <div className="col-md-6">
                     <ProjectBox emoji="📈" projectID="1" title="User Personas" description="Using Python + machine learning to develop user personas from ~1M data points" />
                     <ProjectBox emoji="🇨🇴" projectID="4" title="VICO" description="Graduating from Canadian business school and starting as a Spanish speaking software engineer"/>
-                    <ProjectBox emoji="🕸" projectID="2" title="Tandem Webviews" description="Creating a reusable component library to create realistic in-app prototypes"/>
-                    <ProjectBox emoji="🅴" projectID="2" title="eProjects" description="Leading a team of 15 for UBC’s largest entrepreneurship club’s best year"/>
+                    <ProjectBox link={"https://github.com/AlexCyphus/tandem-experiments"} emoji="🕸" projectID="2" title="Tandem Webviews" description="Creating a reusable component library to create realistic in-app prototypes"/>
+                    <ProjectBox emoji="🅴" link={"https://www.ubceprojects.com/"} title="eProjects" description="Leading a team of 15 for UBC’s largest entrepreneurship club’s best year"/>
                   </div>
                   <div className="col-md-6">
-                    <ProjectBox emoji="🕗" projectID="" title="Ameyo" description="My Chrome Extension (unsuccessfully) competing with Trello, Jira, and Momentum all at once"/>
+                    <ProjectBox emoji="🕗" link={"https://chrome.google.com/webstore/detail/ameyo-task-%20-habit-tracke/bocdgdckommbhbffgloaoefepalhiplh"} projectID="" title="Ameyo" description="My Chrome Extension (unsuccessfully) competing with Trello, Jira, and Momentum all at once"/>
                     <ProjectBox emoji="👨‍💻" projectID="5" title="alexcyph.us" description="Designing and developing my second personal website in Figma → Reactstrap"/>
-                    <ProjectBox emoji="🥇" projectID="2" title="Tandem Certificates" description="Product Manage-ing the development and revenue optimization of Tandem Certificates"/>
-                    <ProjectBox emoji="💬" projectID="2" title="Language Learning" description="My favorite language learning resources"/>
+                    <ProjectBox link={"https://www.tandem.net/certificates"} emoji="🥇" projectID="2" title="Tandem Certificates" description="Product Manage-ing the development and revenue optimization of Tandem Certificates"/>
+                    <ProjectBox emoji="💬" projectID="6" title="Language Learning" description="My favorite language learning resources"/>
                   </div>
 
                 </div>

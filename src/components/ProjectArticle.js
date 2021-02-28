@@ -58,11 +58,11 @@ function ProjectArticle({match, description, location}) {
   const rand = Math.max(Math.floor(Math.random()*5), 1)
 
   return ([
-    <div id="none">
-    <div className="blobholder">
-      <div id="blob-1" class="blob"></div>
-    </div>
-      <div className="app">
+    <div id="none" className="project-article-outer">
+      <div className="blobholder">
+        <div id="blob-1" class="blob"></div>
+      </div>
+      <div className="app project-article-inner">
       <Link to={"/"}><div className="brd"><Header link="/" frame={rand} specId={"article"}/></div></Link>
         <div>
         <p className="article-header text-center brd"><Emoji emoji={emoji} desc="emoji"/> {title} <Emoji emoji={emoji} desc="emoji"/></p>

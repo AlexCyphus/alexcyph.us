@@ -15,7 +15,7 @@ function ArticleContent({projectID}) {
         <p>We ended up taking some clearer clusters and then extracting some other groups that we knew existed in Tandem (such as pro users, expats, etc) and dug deeper into them. </p>
         <p>At the time, I was working remotely from Canada as a result of travel-during-covid-gone-wrong and was waking up at 4/5am every day to hop into Python and explain the results and do further analyses with the Product Team. It was actually super fun and made waking up in cold Canadian darkness a lot more tolerable.</p>
         <ArticleImage image={"up.png"} description="I made lots of matrices and graphics that I'd love to show you but probably shouldn't" class="text-center"/>
-        <p>The whole experience definitely made me feel more comfortable with Python after staring at Jupyter Notebook for about a month. Most importantly, it reignited my interest in data science and it is now I find myself reading about relatively frequently and want to dig deeper into in the future (after German and everything React + JS).</p>
+        <p>The whole experience definitely made me feel more comfortable with Python after staring at Jupyter Notebook for about a month. Most importantly, it reignited my interest in data science and it is now something I find myself reading about relatively frequently and want to dig deeper into in the future (after German and everything React + JS).</p>
       </div>
     ])
   }
@@ -90,22 +90,22 @@ function ArticleContent({projectID}) {
         <p>This article is mainly to answer two questions I get quite frequently from friends which are how to learn a language and what tools should I use?</p>
         <p>I am obviously no expert (I still haven’t nailed the Spanish subjunctive or German adjective endings) but have collected some resources I found particularly helpful.</p>
         <p>---</p>
-        <h4><a className="article-link" href="https://www.italki.com/">iTalki</a></h4>
+        <h4><a className="article-link" target="_blank" href="https://www.italki.com/">iTalki</a> or <a className="article-link" target="_blank" href="https://www.chatterbug.com/">Chatterbug</a></h4>
         <p>Getting a basis for the language’s grammar rules and general structures is a super important first step. I achieved this with 4 years of Spanish in Canadian high school and around 3 months of calls with my German-speaking Grandma in German. Assuming neither of those are options for you - I would recommend iTalki. It is a bit costly but will save you a lot of time trying to figure out grammar rules by yourself. </p>
         <p>---</p>
-        <h4><a className="article-link" href="http://lingvist.com/">Lingvist</a></h4>
+        <h4><a className="article-link" target="_blank" href="http://lingvist.com/">Lingvist</a></h4>
         <p>After getting a little bit of basics under your belt you should start with Lingvist. It is kind of like an aesthetic flashcard app that reads sentences out to you and feeds you new words from related sentences till you understand the whole thing. I’m not sure why it’s so effective but I live and die by Lingvist.</p>
         <p>---</p>
-        <h4><a className="article-link" href="https://chrome.google.com/webstore/detail/language-learning-with-ne/hoombieeljmmljlkjmnheibnpciblicm?hl=en">Language Learning with Netflix</a></h4>
+        <h4><a className="article-link" target="_blank" href="https://chrome.google.com/webstore/detail/language-learning-with-ne/hoombieeljmmljlkjmnheibnpciblicm?hl=en">Language Learning with Netflix</a></h4>
         <p>A more fun follow up tool would be Language Learning with Netflix. It’s a Chrome Plugin that shows you all the hidden subtitles on Netflix shows and lets you display two sets of subtitles at once. Or you can just show foreign language subtitles and click on each word for a translation. It is a lot easier to learn Spanish watching Narcos than doing endless flashcards.</p>
         <p>---</p>
-        <h4><a className="article-link" href="https://www.tandem.net/">Tandem</a></h4>
+        <h4><a className="article-link" target="_blank" href="https://www.tandem.net/">Tandem</a></h4>
         <p>Obviously, I have to recommend Tandem. It is extremely stressful at first seeing messages come in and not really knowing how to reply to them and heavily relying on Google Translate but you will be surprised how quickly you improve. Once you feel more comfortable chatting over Tandem Chat you should try to meet up with someone in person or have a call to practice. It’s scary but the only way to get experience really speaking the language! Also in my opinion it is one of the easiest ways to make friends in a new city. Also the app is obviously stunning and only getting better by the day.</p>
         <p>---</p>
-        <h4><a className="article-link" href="https://apps.ankiweb.net/">Anki</a></h4>
+        <h4><a className="article-link" target="_blank" href="https://apps.ankiweb.net/">Anki</a></h4>
         <p>The last and most mind-numbing tool in my arsenal is Anki. When you finish Lingvist and just need some more niche or customized vocabulary - Anki is the place to go. I took words I didn’t know from Netflix shows, made vocab sheets in Google Sheets, and imported them into Anki. It’s mind-numbing going through thousands of flashcards but incredibly helpful. I promise you at some point you will be surprised you can watch Netflix and recognize 99% of the words.</p>
         <p>---</p>
-        <h4><a className="article-link" href="https://radioambulante.org/en">Radio Ambulante</a></h4>
+        <h4><a className="article-link" target="_blank" href="https://radioambulante.org/en">Radio Ambulante</a></h4>
         <p>Also a Spanish specific resource: Radio Ambulante. It’s an incredible podcast where Latin Americans share interesting stories about their lives or countries. It also has subtitles so you can read along and add to your Anki deck ;). It is also super helpful as basically every episode has a new Spanish accent so you can start to recognize them and become more used to Spanish in general rather than one specific kind. <a className="article-link" href="https://radioambulante.org/audio/ciudad-infinita.">Here is my favorite episode</a> which convinced me to travel to Lima.</p>
         <p>---</p>
         <p>I’m planning to start learning Portuguese in about a year’s time when I feel okay about my German (hopefully). If you have any recommendations for resources for German or Portuguese let me know - <a className="article-link" href="mailto:alexjcyphus@gmail.com">alexjcyphus@gmail.com</a>.</p>

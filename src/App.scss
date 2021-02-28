@@ -159,9 +159,30 @@ p {
   max-width: 100%;
 }
 
-.article-content {
+.article-content-outer {
   padding: 20px 0px;
   font-size: 16px !important;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.article-content {
+  padding: 0 10vw;
+}
+
+.project-article-outer {
+  display: flex;
+}
+
+.project-article-inner {
+  overflow-y: visible;
+  max-height: max-content;
+  height: max-content;
+  margin: auto;
+
+  p {
+    padding-bottom: 15px;
+  }
 }
 
 .article-header {
@@ -172,7 +193,7 @@ p {
 
 .article-description {
   font-size: calc(max(20px, 1.5vw));
-  padding: 8px;
+  padding: 8px 10vw;
   margin: 0
 }
 
@@ -246,19 +267,6 @@ p {
   cursor: pointer;
 }
 
-.outer-card {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 2;
-  font-family: 'IBM Plex Mono', monospace;
-}
-
 .black-background {
   background-color: black;
   opacity: 0.8;
@@ -266,65 +274,6 @@ p {
   width: 100%;
   position: absolute;
   overflow-x:hidden;
-}
-
-.inner-card {
-  height: 50vw;
-  max-height: 350px;
-  width: 80vw;
-  max-width: 600px;
-  background-image: url('/card-background.png');
-  background-size: cover;
-  z-index: 3;
-  border-radius: 20px;
-}
-
-#close-card {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: left;
-  padding: 0px 25px;
-}
-
-#close-card-row {
-  position: absolute !important;
-  justify-content: flex-end;
-  max-width: 600px !important;
-  width: 80vw !important;
-  display: flex;
-}
-
-#my-face {
-  width: 25vw;
-  height: 25vw;
-  max-height: 250px;
-  max-width: 250px;
-  border-radius: 5000px;
-}
-
-.biz-card-link {
-  font-size: 15px;
-  margin-left: 0;
-}
-
-#my-name {
-  font-weight: bold;
-  font-size: 25px;
-
-}
-
-.inner-card {
-  padding: 0;
-}
-
-
-.inner-inner-card {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#links {
-  right: 30px;
 }
 
 .pushed-in {
