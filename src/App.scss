@@ -105,6 +105,7 @@ p {
   -webkit-box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
   -moz-box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
   box-shadow: 10px 10px 10px -4px rgba(163,163,163,1);
+  min-width: 100%;
 }
 
 .inner-project-box:hover {
@@ -384,3 +385,38 @@ p {
   z-index: -1;
   overflow:hidden;
 }
+
+
+@keyframes blinker {
+  0% {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  30% {
+    color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  60% {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+}
+
+.scroll-popup-outer {
+  position: absolute;
+  z-index: 15;
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: white;
+  width: 40%;
+  height: fit-content;
+  right: 30%;
+  background-color: rgba(0, 0, 0, 0.85);
+  bottom: 5%;
+  display: flex;
+
+  h3 {
+    margin: 0 auto;
+  }
+}
+

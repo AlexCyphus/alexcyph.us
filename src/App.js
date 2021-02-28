@@ -12,18 +12,27 @@ import ProjectBox from './components/ProjectBox'
 
 // being kept awake by Kaffeine https://kaffeine.herokuapp.com/
 
+const ScrollPopup = ({display}) => {
+  return (
+    <div className={`scroll-popup-outer ${display ? "d-none" : 'd-none d-lg-flex'}`}>
+      <h3>⬇️ Scroll ⬇️</h3>
+    </div>
+  )
+}
+
 class App extends Component {
   constructor(props) {
     super(props)
-    this.toggleOverlay = this.toggleOverlay.bind(this);
-    this.toggleCard = this.toggleCard.bind(this);
-    const showOverlay = this.props.match.path;
-    if (showOverlay === "/o") {
-      this.state = {overlay: true, card: false, frame: 2}
+    this.state = {
+      frame: 1,
+      scroll: true
     }
-    else {
-      this.state = {overlay: false, card: false, frame: 2}
+    this.projectScrollHandler = (e) => {
+      if (e.target.scrollTop > this.state.scroll){
+        this.setState({scroll: e.target.scrollTop})
+      }
     }
+    
     this.setInterval = setInterval(() => {
       if (this.state.frame) {
         if (this.state.frame < 4) {
@@ -32,14 +41,6 @@ class App extends Component {
         else {this.setState({frame: 1})}
       }
     }, 350)
-  }
-  toggleOverlay() {
-    this.setState({overlay: !this.state.overlay});
-  }
-
-  toggleCard() {
-    this.setState({card: !this.state.card});
-    console.log(this.state.card)
   }
 
   iterateFrame(){
@@ -57,8 +58,8 @@ class App extends Component {
   }
 
   render() {
-    let background = !this.state.overlay ? "background" : "background-0"
-    let blob2 = !this.state.overlay ? "blob-2" : "d-none"
+    let background = "background"
+    let blob2 = "blob-2"
     
     return (
     <div class="d-flex">
@@ -87,7 +88,8 @@ class App extends Component {
               </div>
             </div>
             <div className="inner-content-container col-lg-6 container">
-                <div className="project-box-container row">
+                <div className="project-box-container row" onScroll={this.projectScrollHandler}>
+                  <ScrollPopup display={this.state.scroll == 0 || this.state.scroll > 5}/>
                   <div className="col-md-6">
                     <ProjectBox emoji="📈" projectID="1" title="User Personas" description="Using Python + machine learning to develop user personas from ~1M data points" />
                     <ProjectBox emoji="🇨🇴" projectID="4" title="VICO" description="Graduating from Canadian business school and starting as a Spanish speaking software engineer"/>
