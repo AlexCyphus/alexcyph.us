@@ -4,7 +4,7 @@ import Emoji from './Emoji.js';
 
 const UrlWrapper = ({children, link}) => {
   return (
-    <a href={link} target="_BLANK" className="col-lg-6 outer-project-box" style={{ textDecoration: 'none', color: 'black'}}>
+    <a href={link} target="_BLANK" className="outer-project-box d-flex" style={{ textDecoration: 'none', color: 'black'}}>
       {children}
     </a>
   )
@@ -14,7 +14,7 @@ const LinkWrapper = ({children, projectID}) => {
   return (
   <Link 
     to={{pathname:'/project/'+projectID}} 
-    className="col-lg-6 outer-project-box" 
+    className="outer-project-box d-flex" 
     style={{ textDecoration: 'none', color: 'black'}}
   >
     {children}
@@ -24,7 +24,7 @@ const LinkWrapper = ({children, projectID}) => {
 
 const MainContent = ({emoji, title, description}) => {
   return (
-    <div className="outer-project-box d-flex">
+    
       <div className="inner-project-box m-auto">
         <div className="project-box-header">
           <p className="emoji"><Emoji emoji={emoji} desc="emoji"/></p>
@@ -36,7 +36,7 @@ const MainContent = ({emoji, title, description}) => {
           </div>
         </div>
       </div>
-    </div>
+    
   )
 }
 
