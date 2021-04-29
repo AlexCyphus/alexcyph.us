@@ -21,7 +21,8 @@ app.get('*', (req, res) => {
   console.log(req.url)
 });
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 3000;
+// console.log(process.env)
 app.listen(port);
 
-console.log(`Password generator listening on ${port}`);
+console.log(`Password generator listening on ${port}!`);
