@@ -25,7 +25,7 @@ const User = mongoose.model("User", userSchema);
 
 const app = express();
 app.use(cors())
-app.use(bodyParser.json({"limit": "10M"}));
+app.use(bodyParser.json());
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'frontend/build')));
