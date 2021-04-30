@@ -82,7 +82,7 @@ class App extends Component {
                 <div className="main-text-container m-auto">
                   <p>>> hey there i’m alex <Emoji emoji="👋" desc="waving"/></p>
                   <p>>> i’m a <Emoji emoji="🇬🇧" desc="british-flag"/> british / <Emoji emoji="🇨🇦" desc="canadian-flag"/> canadian living in berlin</p>
-                  <p>>> currently working as a product manager at <a href="http://www.tandem.net" target="_blank" className="article-link">tandem</a> and developing <a href="https://chrome.google.com/webstore/detail/ameyo/bocdgdckommbhbffgloaoefepalhiplh" className="article-link">ameyo</a></p>
+                  <p>>> currently working as a product manager at <a href="http://www.tandem.net" target="_blank" className="article-link">tandem</a> and developing <a href="https://chrome.google.com/webstore/detail/ameyo/bocdgdckommbhbffgloaoefepalhiplh" className="article-link">ameyo</a> + something new 👀</p>
                   <p>>> interested in languages (<Emoji emoji="🇨🇦" desc="canadian-flag"/>/<Emoji emoji="🇨🇴" desc="colombian-flag"/>/<Emoji emoji="🇩🇪" desc="german-flag"/>), economics, productivity, startups, product management, and frontend development</p>
                 </div>
               </div>
