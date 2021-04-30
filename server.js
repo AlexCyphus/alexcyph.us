@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
+var cors = require('cors')
 
 // aRdtW866UT4yfqdZ
 
@@ -23,6 +24,7 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model("User", userSchema);
 
 const app = express();
+app.use(cors())
 app.use(bodyParser.json());
 
 // Serve static files from the React app
