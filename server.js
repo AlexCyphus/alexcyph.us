@@ -4,10 +4,10 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 var cors = require('cors')
 
-// aRdtW866UT4yfqdZ
+const MONGO_PASSWORD = process.env.MONGO_PASSWORD
 
 // Set up Mongoose
-const MONGO_URI = 'mongodb+srv://alex:aRdtW866UT4yfqdZ@cluster0.jsu7b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const MONGO_URI = `mongodb+srv://alex:${MONGO_PASSWORD}@cluster0.jsu7b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // create schema
