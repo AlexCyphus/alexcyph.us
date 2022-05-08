@@ -11,10 +11,9 @@ interface IProjectContainer {
 const ProjectContainer: React.FC<IProjectContainer> = ({ project }) => {
   const [activeColor, setActiveColor] = useState(getRandomPastelClass())
   return (
-    <button
+    <a
       className="flex flex-col gap-y-2 w-11/12 justify-between max-w-[24rem] border bg-white border-gray-200 p-3 rounded-md group ibm-mono hover:shadow-lg transform hover:scale-105 transition-transform"
-      onClick={() => { window.location.href = project.url }}
-      type="button"
+      href={project.url}
       onMouseLeave={() => setActiveColor(getRandomPastelClass())}
     >
       <div className="flex flex-col gap-y-2 w-full">
@@ -26,7 +25,7 @@ const ProjectContainer: React.FC<IProjectContainer> = ({ project }) => {
         <p className="text-left text-sm">{project.description}</p>
       </div>
       <ProjectTags project={project} />
-    </button>
+    </a>
   )
 }
 

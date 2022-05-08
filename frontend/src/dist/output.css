@@ -626,6 +626,14 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: spin 10s linear infinite;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
 .flex-col {
   flex-direction: column;
 }

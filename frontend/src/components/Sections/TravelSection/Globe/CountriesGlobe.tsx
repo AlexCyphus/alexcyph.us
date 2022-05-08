@@ -12,16 +12,18 @@ const CountriesGlobe: React.FC = () => {
   return (
     <div className="flex justify-center relative w-full">
       <FloatingBlob color="green" className={`absolute top-2 -z-10 ${blobSize}`} />
-      <Globe
-        ref={globeRef}
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
-        polygonsData={globeCountriesData}
-        width={globeSize}
-        height={globeSize}
-        polygonCapColor="white"
-        polygonSideColor="white"
-        backgroundColor="rgba(0, 0, 0, 0)"
-      />
+      <div className="cursor-grabbing">
+        <Globe
+          ref={globeRef}
+          globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
+          polygonsData={globeCountriesData}
+          width={globeSize}
+          height={globeSize}
+          polygonCapColor="white"
+          polygonSideColor="white"
+          backgroundColor="rgba(0, 0, 0, 0)"
+        />
+      </div>
     </div>
   )
 }

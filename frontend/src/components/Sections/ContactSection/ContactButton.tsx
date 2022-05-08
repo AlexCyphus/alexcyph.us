@@ -7,14 +7,13 @@ interface IContactButton {
 }
 
 const ContactButton: React.FC<IContactButton> = ({ logo, color, url }) => (
-  <button
+  <a
     className="w-[85px] h-[85px] relative flex items-center justify-center transform hover:scale-125 transition-transform"
-    type="button"
-    onClick={() => { window.location.href = url }}
+    href={url}
   >
     <img src={logo} alt="Contact button" className="w-[60px] h-[60px] z-10" />
     <FloatingBlob color={color} className="absolute w-[85px] h-[85px] left-0 top-0" />
-  </button>
+  </a>
 )
 
 export default ContactButton
