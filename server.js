@@ -5,7 +5,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const cors = require('cors')
-require('dotenv').config({ path: './.env' })
+require('dotenv')
 
 const { MONGO_PASSWORD } = process.env
 
