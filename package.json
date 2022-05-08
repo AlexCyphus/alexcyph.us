@@ -2,9 +2,6 @@
   "name": "website",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "12.16.2"
-  },
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
@@ -12,11 +9,8 @@
     "heroku-postbuild": "cd frontend && yarn install && yarn run build",
     "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexCyphus/personal-website.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/AlexCyphus/personal-website.git",
+  "author": "Alex Cyphus <alexjcyphus@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlexCyphus/personal-website/issues"
