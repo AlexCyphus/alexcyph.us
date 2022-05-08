@@ -626,10 +626,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: spin 10s linear infinite;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .cursor-grabbing {
   cursor: grabbing;
 }
@@ -682,6 +678,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-2 {
   -webkit-column-gap: 0.5rem;
           column-gap: 0.5rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .rounded-lg {
@@ -850,6 +850,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 5rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -875,6 +879,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-8 {
