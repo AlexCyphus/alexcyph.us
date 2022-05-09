@@ -12,7 +12,7 @@ const ProjectContainer: React.FC<IProjectContainer> = ({ project }) => {
   const [activeColor, setActiveColor] = useState(getRandomPastelClass())
   return (
     <a
-      className="flex flex-col gap-y-2 w-11/12 justify-between max-w-[24rem] border bg-white border-gray-200 p-3 rounded-md group ibm-mono hover:shadow-lg transform hover:scale-105 transition-transform"
+      className="flex flex-col gap-y-2 w-full justify-between max-w-[24rem] border bg-white border-gray-200 p-3 rounded-md group ibm-mono hover:shadow-lg transform hover:scale-105 transition-transform"
       href={project.url}
       onMouseLeave={() => setActiveColor(getRandomPastelClass())}
     >
