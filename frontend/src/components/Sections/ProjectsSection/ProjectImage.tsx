@@ -6,7 +6,7 @@ interface IProjectImage {
 }
 
 const ProjectImage: React.FC<IProjectImage> = ({ project, activeColor }) => (
-  <div className={`flex items-center w-full justify-center border border-gray-200 rounded-md md:grayscale group-hover:grayscale-0 h-52 ${activeColor}`}>
+  <div className={`flex items-center w-full justify-center border border-gray-200 rounded-md h-52 ${activeColor}`}>
     <img
       src={project.image}
       alt={project.title}

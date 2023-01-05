@@ -1,36 +1,42 @@
+// this could be a lot neater
 import Hyperlink from '../../shared/atoms/Hyperlink'
 
 const aboutData = [
-  'Hey there 👋 I’m Alex.',
-  'I’m a Canadian finance / economics graduate turned Europe-based software engineer / product manager / indie hacker.',
+  "👋 Hey there I'm Alex.",
+  'I’m a 📍 Berlin-based Austrian-Canadian fullstack engineer into building amazing products with fullstack Typescript.',
   <>
-    <span>Currently working at </span>
-    <Hyperlink text="Lhotse" url="https://www.lhotse.de/" />
-    <span> as a frontend engineer to reduce chaos in the world of procurement.</span>
+    <span>Working at </span>
+    <Hyperlink text="Throne" url="http://throne.me/" />
+    <span> as a fullstack engineer to help grow the creator economy.</span>
   </>,
   <>
-    <span>Also building </span>
-    <Hyperlink text="kaards.io" url="http://kaaards.io" />
+    <span>Building </span>
+    <Hyperlink text="kaards" url="http://kaaards.io" />
     <span>
       , a language learning platform with the thesis that language apps
       should optimize for effectiveness over fun.
     </span>
   </>,
-  <>
-    <span>Previously built </span>
+  <span>
+    Prev built: [
+    <Hyperlink text="kaards" url="http://kaaards.io" />
+    {', '}
     <Hyperlink text="Ameyo" url="https://chrome.google.com/webstore/detail/ameyo/bocdgdckommbhbffgloaoefepalhiplh?hl=en-GB&authuser=2" />
-    <span>
-      {' '}
-      to try to maintain habits, keep organized, and stay
-      sane during COVID lockdowns. I also worked at
-      {' '}
-    </span>
+    ]
+  </span>,
+  <span>
+    Prev software engineer: [
+    <Hyperlink text="Lhotse" url="https://lhotse.de" />
+    {', '}
+    <Hyperlink text="VICO" url="https://getvico.com/" />
+    ]
+  </span>,
+  <span>
+    Prev product manager: [
     <Hyperlink text="Tandem" url="https://tandem.net" />
-    <span> where amongst other things “Product Managed” the </span>
-    <Hyperlink text="Tandem Certificates" url="https://www.tandem.net/pages/certificates" />
-    <span> feature from ideation to release and optimization.</span>
-  </>,
-  'Super interested in languages (🇨🇦/🇨🇴/🇩🇪), economics, productivity, startups, product design, data analytics, and above all coding (frontend, backend, mobile) 🧑‍💻.',
+    ]
+  </span>,
+  'Super interested in languages (🇨🇦/🇨🇴/🇩🇪), travel, economics, remote-work, and above all coding (frontend, backend, mobile).',
 ]
 
 export default aboutData
